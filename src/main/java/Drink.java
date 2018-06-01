@@ -8,4 +8,8 @@ public class Drink extends Item {
         super(make, model, purchaseDate, buyPrice, shippingPrice, currentMarketValue);
         this.drinkType = drinkType;
     }
+
+    public DrinkType getDrinkType() {
+        return drinkType;
+    }
 }

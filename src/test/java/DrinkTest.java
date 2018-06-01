@@ -37,4 +37,14 @@ public class DrinkTest {
     public void canGetShippingPrice() {
         assertEquals(2.00, drink.getShippingPrice(), 0.01);
     }
+
+    @Test
+    public void canGetCurrentMarketValue() {
+        assertEquals(21.00, drink.getCurrentMarketValue(), 0.01);
+    }
+
+    @Test
+    public void canGetDrinkType() {
+        assertEquals(DrinkType.VODKA, drink.getDrinkType());
+    }
 }
