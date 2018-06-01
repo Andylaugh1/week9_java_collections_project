@@ -15,7 +15,7 @@ public class DrinkTest {
 
     @Test
     public void canGetMake() {
-        assertEquals("Smirnoff", drink.getMake());
+        assertEquals("Smirnoff", drink.getBrand());
     }
 
     @Test
@@ -52,5 +52,23 @@ public class DrinkTest {
     public void canSetNewMarketValue() {
         drink.setNewMarketValue(21.00);
         assertEquals(21.00, drink.getCurrentMarketValue(), 0.01);
+    }
+
+    @Test
+    public void canGetIsForResaleOrNotFalse() {
+        assertEquals(false, drink.getResaleStatus());
+    }
+
+    @Test
+    public void canSetResaleStatusToTrue() {
+        drink.changeForSaleStatus();
+        assertEquals(true, drink.getResaleStatus());
+    }
+
+    @Test
+    public void canSetResaleStatusBackToFalse() {
+        drink.changeForSaleStatus();
+        drink.changeForSaleStatus();
+        assertEquals(false, drink.getResaleStatus());
     }
 }

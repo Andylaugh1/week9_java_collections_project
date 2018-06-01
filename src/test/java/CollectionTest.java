@@ -53,5 +53,12 @@ public class CollectionTest {
         assertEquals(3.50, collection.calculateTotalShippingPricePaid(), 0.01);
     }
 
+    @Test
+    public void canGetTotalPriceShippingAndBuyingCombined() {
+        collection.addItem(item1);
+        collection.addItem(item);
+        assertEquals(40.50, collection.calculateTotalPricePaid(), 0.01);
+    }
+
 
 }

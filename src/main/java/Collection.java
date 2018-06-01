@@ -47,4 +47,9 @@ public class Collection {
         }
         return totalShippingPrice;
     }
+
+    public double calculateTotalPricePaid() {
+        double totalPricePaid = calculateTotalItemPricePaid() + calculateTotalShippingPricePaid();
+        return totalPricePaid;
+    }
 }
