@@ -31,5 +31,12 @@ public class CollectionTest {
         assertEquals(1, collection.countItems());
     }
 
+    @Test
+    public void canRemoveItemFromCollection() {
+        collection.addItem(item);
+        collection.removeItem(item);
+        assertEquals(0, collection.countItems());
+    }
+
 
 }
