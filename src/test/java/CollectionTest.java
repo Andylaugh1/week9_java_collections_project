@@ -40,10 +40,17 @@ public class CollectionTest {
     }
 
     @Test
-    public void canGetTotalPricePaidForCollection() {
+    public void canGetTotalPricePaidForItems() {
         collection.addItem(item1);
         collection.addItem(item);
-        assertEquals(37.00, collection.calculateTotalPricePaid(), 0.01);
+        assertEquals(37.00, collection.calculateTotalItemPricePaid(), 0.01);
+    }
+
+    @Test
+    public void canGetTotalPricePaidForShipping() {
+        collection.addItem(item1);
+        collection.addItem(item);
+        assertEquals(3.50, collection.calculateTotalShippingPricePaid(), 0.01);
     }
 
 

@@ -32,11 +32,19 @@ public class Collection {
         this.items.remove(item);
     }
 
-    public double calculateTotalPricePaid() {
+    public double calculateTotalItemPricePaid() {
         double totalPricePaid = 0;
         for (Item item : items) {
             totalPricePaid += item.getBuyPrice();
         }
         return totalPricePaid;
+    }
+
+    public double calculateTotalShippingPricePaid() {
+        double totalShippingPrice = 0;
+        for (Item item : items) {
+            totalShippingPrice += item.getShippingPrice();
+        }
+        return totalShippingPrice;
     }
 }
