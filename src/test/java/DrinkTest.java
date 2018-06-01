@@ -17,7 +17,7 @@ public class DrinkTest {
     public void canGetMake() {
         assertEquals("Smirnoff", drink.getMake());
     }
-    
+
     @Test
     public void canGetModel() {
         assertEquals("Red Label", drink.getModel());
@@ -26,5 +26,15 @@ public class DrinkTest {
     @Test
     public void canGetPurchaseDate() {
         assertEquals("30/05/2017", drink.getPurchaseDate());
+    }
+
+    @Test
+    public void canGetBuyPrice() {
+        assertEquals(20.00, drink.getBuyPrice(), 0.01);
+    }
+
+    @Test
+    public void canGetShippingPrice() {
+        assertEquals(2.00, drink.getShippingPrice(), 0.01);
     }
 }
