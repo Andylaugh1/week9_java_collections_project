@@ -10,7 +10,7 @@ public class DrinkTest {
 
     @Before
     public void before() {
-        drink = new Drink("Smirnoff", "Red Label", "30/05/2017", 20.00, 2.00, 21.00, DrinkType.VODKA);
+        drink = new Drink("Smirnoff", "Red Label", "30/05/2017", 20.00, 2.00, DrinkType.VODKA);
     }
 
     @Test
@@ -40,11 +40,17 @@ public class DrinkTest {
 
     @Test
     public void canGetCurrentMarketValue() {
-        assertEquals(21.00, drink.getCurrentMarketValue(), 0.01);
+        assertEquals(00.00, drink.getCurrentMarketValue(), 0.01);
     }
 
     @Test
     public void canGetDrinkType() {
         assertEquals(DrinkType.VODKA, drink.getDrinkType());
+    }
+
+    @Test
+    public void canSetNewMarketValue() {
+        drink.setNewMarketValue(21.00);
+        assertEquals(21.00, drink.getCurrentMarketValue(), 0.01);
     }
 }

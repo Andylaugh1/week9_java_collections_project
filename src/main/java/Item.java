@@ -10,7 +10,7 @@ public class Item {
     private double shippingPrice;
     private double currentMarketValue;
 
-    public Item(String make, String model, String purchaseDate, double buyPrice, double shippingPrice, double currentMarketValue){
+    public Item(String make, String model, String purchaseDate, double buyPrice, double shippingPrice){
         this.make = make;
         this.model = model;
         this.purchaseDate = purchaseDate;
@@ -41,5 +41,9 @@ public class Item {
 
     public double getCurrentMarketValue() {
         return currentMarketValue;
+    }
+
+    public void setNewMarketValue(double newMarketValue) {
+        this.currentMarketValue = newMarketValue;
     }
 }
