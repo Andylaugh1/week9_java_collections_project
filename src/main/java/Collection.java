@@ -31,4 +31,12 @@ public class Collection {
     public void removeItem(Item item) {
         this.items.remove(item);
     }
+
+    public double calculateTotalPricePaid() {
+        double totalPricePaid = 0;
+        for (Item item : items) {
+            totalPricePaid += item.getBuyPrice();
+        }
+        return totalPricePaid;
+    }
 }

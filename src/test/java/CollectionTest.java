@@ -7,12 +7,13 @@ import static org.junit.Assert.assertEquals;
 public class CollectionTest {
 
     Collection collection;
-    Item item;
+    Item item, item1;
 
     @Before
     public void before() {
         collection = new Collection("Alcoholic Drinks");
         item = new Drink("Smirnoff", "Red Label", "30/05/2017", 20.00, 2.00, DrinkType.VODKA);
+        item1 = new Drink("Gordon's", "Gordon's", "31/05/2017", 17.00, 1.50, DrinkType.GIN);
     }
 
     @Test
@@ -36,6 +37,13 @@ public class CollectionTest {
         collection.addItem(item);
         collection.removeItem(item);
         assertEquals(0, collection.countItems());
+    }
+
+    @Test
+    public void canGetTotalPricePaidForCollection() {
+        collection.addItem(item1);
+        collection.addItem(item);
+        assertEquals(37.00, collection.calculateTotalPricePaid(), 0.01);
     }
 
 
