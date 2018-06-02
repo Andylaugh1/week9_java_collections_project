@@ -1,17 +1,16 @@
+import Interface.ISell;
 
-
-public class Item {
-    private String purchaseDate;
+public class Item implements ISell {
     private double buyPrice;
     private double shippingPrice;
     private double currentMarketValue;
+    private String purchaseDate;
     private boolean isForResale;
 
     public Item(String purchaseDate, double buyPrice, double shippingPrice){
-        this.purchaseDate = purchaseDate;
         this.buyPrice = buyPrice;
         this.shippingPrice = shippingPrice;
-        this.currentMarketValue = currentMarketValue;
+        this.purchaseDate = purchaseDate;
         this.isForResale = false;
     }
 
@@ -42,5 +41,13 @@ public class Item {
 
     public void changeForSaleStatus() {
         this.isForResale ^= true;
+    }
+
+    public double calculateProfitIfSold() {
+        double potentialProfit = 0;
+        if (isForResale == true) {
+            potentialProfit = currentMarketValue - (buyPrice + shippingPrice);
+        }
+        return potentialProfit;
     }
 }

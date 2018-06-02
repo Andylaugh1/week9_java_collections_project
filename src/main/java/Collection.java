@@ -65,4 +65,12 @@ public class Collection {
         }
         return itemsForSale;
     }
+
+    public double calculateTotalPotentialProfitOfSellableItems() {
+        double totalPotentialProfit = 0;
+        for(Item item : items) {
+            totalPotentialProfit += item.calculateProfitIfSold();
+        }
+        return totalPotentialProfit;
+    }
 }

@@ -27,4 +27,11 @@ public class TShirtTest {
     public void canGetType() {
         assertEquals(TShirtType.V_NECK, tshirt.getTshirtType());
     }
+
+    @Test
+    public void canCalculatePotentialProfitItemIsSellable() {
+        tshirt.changeForSaleStatus();
+        tshirt.setNewMarketValue(3.50);
+        assertEquals(0.51, tshirt.calculateProfitIfSold(), 0.01);
+    }
 }

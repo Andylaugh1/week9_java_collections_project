@@ -73,5 +73,16 @@ public class CollectionTest {
         assertEquals(2, result.size());
     }
 
+    @Test
+    public void canCalculatePotentialProfitOfSellableItems(){
+        collection.addItem(item);
+        collection.addItem(item1);
+        item.changeForSaleStatus();
+        item1.changeForSaleStatus();
+        item.setNewMarketValue(22.00);
+        item1.setNewMarketValue(20.00);
+        assertEquals(1.50, collection.calculateTotalPotentialProfitOfSellableItems(), 0.01);
+    }
+
 
 }

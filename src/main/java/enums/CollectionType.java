@@ -3,5 +3,6 @@ package enums;
 public enum CollectionType {
 
     ALCOHOLIC_DRINKS,
-    TSHIRTS
+    TSHIRTS,
+    WRESTLING_FIGURES,
 }
