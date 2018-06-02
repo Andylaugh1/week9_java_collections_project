@@ -1,19 +1,22 @@
+import enums.CollectionType;
+import enums.DrinkType;
+
 import java.util.ArrayList;
 
 public class Collection {
 
-    private String name;
+    private CollectionType collectionType;
     private ArrayList<Item> items;
 
 
-    public Collection(String name) {
-        this.name = name;
+    public Collection(CollectionType collectionType) {
+        this.collectionType = collectionType;
         this.items = new ArrayList<>();
     }
 
 
-    public String getName() {
-        return name;
+    public CollectionType getCollectionType() {
+        return collectionType;
     }
 
     public int countItems() {
