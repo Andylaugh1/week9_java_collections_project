@@ -2,6 +2,8 @@ import enums.DrinkType;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class CollectionTest {
@@ -13,7 +15,7 @@ public class CollectionTest {
     public void before() {
         collection = new Collection("Alcoholic Drinks");
         item = new Drink("Smirnoff", "Red Label", "30/05/2017", 20.00, 2.00, DrinkType.VODKA);
-        item1 = new Drink("Gordon's", "Gordon's", "31/05/2017", 17.00, 1.50, DrinkType.GIN);
+        item1 = new Drink("Gordon's", "Gordon's", "30/05/2018", 17.00, 1.50, DrinkType.GIN);
     }
 
     @Test
@@ -58,6 +60,16 @@ public class CollectionTest {
         collection.addItem(item1);
         collection.addItem(item);
         assertEquals(40.50, collection.calculateTotalPricePaid(), 0.01);
+    }
+
+    @Test
+    public void canGetItemsMarkedForReSale() {
+        collection.addItem(item);
+        collection.addItem(item1);
+        item1.changeForSaleStatus();
+        item.changeForSaleStatus();
+        ArrayList result = collection.getItemsMarkedForReSale();
+        assertEquals(2, result.size());
     }
 
 

@@ -52,4 +52,14 @@ public class Collection {
         double totalPricePaid = calculateTotalItemPricePaid() + calculateTotalShippingPricePaid();
         return totalPricePaid;
     }
+
+    public ArrayList<Item> getItemsMarkedForReSale() {
+        ArrayList itemsForSale = new ArrayList<Item>();
+        for (Item item : items) {
+            if (item.getResaleStatus() == true) {
+                itemsForSale.add(item);
+            }
+        }
+        return itemsForSale;
+    }
 }
