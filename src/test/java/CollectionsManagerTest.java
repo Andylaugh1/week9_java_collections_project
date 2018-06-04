@@ -41,6 +41,11 @@ public class CollectionsManagerTest {
         assertEquals(2, collectionsManager.countCollections());
     }
 
+    @Test
+    public void canCountSellableItems(){
+        assertEquals(0, collectionsManager.countSaleItems());
+    }
+
 
 //    @Test
 //    public void canAddItemsToSellableList(){
