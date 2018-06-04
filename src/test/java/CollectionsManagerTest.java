@@ -27,8 +27,6 @@ public class CollectionsManagerTest {
 
         collectionsManager = new CollectionsManager();
 
-        collectionsManager.addCollection(collection);
-        collectionsManager.addCollection((collection1));
 
         collection.addItem(item);
         collection.addItem(item1);
@@ -36,26 +34,28 @@ public class CollectionsManagerTest {
         collection1.addItem(item3);
     }
 
-    @Test
-    public void canCountCollections(){
-        assertEquals(2, collectionsManager.countCollections());
-    }
 
     @Test
     public void canCountSellableItems(){
         assertEquals(0, collectionsManager.countSaleItems());
     }
 
+    @Test
+    public void canAddSellableItem(){
+        collectionsManager.addSaleItem(item1);
+        assertEquals(1, collectionsManager.countSaleItems());
+    }
 
-//    @Test
-//    public void canAddItemsToSellableList(){
-//        item.setNewMarketValue(25.00);
-//        item.changeForSaleStatus();
-//        item3.setNewMarketValue(16.00);
-//        item3.changeForSaleStatus();
-//        collectionsManager.getItemsForSale();
-//        assertEquals(2, collectionsManager.countSaleItems());
-//    }
+    @Test
+    public void canAddItemsToSellableList(){
+        item.setNewMarketValue(25.00);
+        item.changeForSaleStatus();
+        item3.setNewMarketValue(16.00);
+        item3.changeForSaleStatus();
+        collectionsManager.addSellableItemsFromCollection(collection);
+        collectionsManager.addSellableItemsFromCollection(collection1);
+        assertEquals(2, collectionsManager.countSaleItems());
+    }
 
 
 }

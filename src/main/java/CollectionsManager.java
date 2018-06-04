@@ -5,23 +5,26 @@ import java.util.ArrayList;
 public class CollectionsManager {
 
     private ArrayList<ISell> forSaleItems;
-    private ArrayList<Collection> collections;
 
     public CollectionsManager() {
         this.forSaleItems = new ArrayList<>();
-        this.collections = new ArrayList<>();
     }
 
     public int countSaleItems() {
         return this.forSaleItems.size();
     }
 
-    public int countCollections() {
-        return this.collections.size();
-    }
+   public void addSaleItem(ISell item) {
+        forSaleItems.add(item);
+   }
 
-    public void addCollection(Collection collection){
-        this.collections.add(collection);
-    }
+   public void addSellableItemsFromCollection(Collection collection) {
+        for (Item item : collection.getItems()) {
+            if (item.getResaleStatus() == true) {
+                forSaleItems.add(item);
+            }
+        }
+   }
+
 
 }
