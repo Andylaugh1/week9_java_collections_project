@@ -12,5 +12,4 @@ public class CollectionsManager {
         this.collections = new ArrayList<>();
     }
 
-    public getSellableItems()
 }

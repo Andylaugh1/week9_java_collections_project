@@ -4,5 +4,5 @@ public enum CollectionType {
 
     ALCOHOLIC_DRINKS,
     TSHIRTS,
-    WRESTLING_FIGURES,
+    ACTION_FIGURES,
 }
