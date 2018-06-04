@@ -1,21 +1,30 @@
 import Interface.ISell;
+import sun.util.calendar.CalendarDate;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Item implements ISell {
     private double buyPrice;
     private double shippingPrice;
     private double currentMarketValue;
-    private String purchaseDate;
+    private Date purchaseDate;
     private boolean isForResale;
 
-    public Item(String purchaseDate, double buyPrice, double shippingPrice){
+    public Item(double buyPrice, double shippingPrice){
         this.buyPrice = buyPrice;
         this.shippingPrice = shippingPrice;
-        this.purchaseDate = purchaseDate;
+        this.purchaseDate = new Date();
         this.isForResale = false;
     }
 
+    public void setPurchaseDate(Date purchaseDate) {
+        this.purchaseDate = purchaseDate;
+    }
 
-    public String getPurchaseDate() {
+    public Date getPurchaseDate() {
         return purchaseDate;
     }
 
@@ -50,4 +59,5 @@ public class Item implements ISell {
         }
         return potentialProfit;
     }
+
 }

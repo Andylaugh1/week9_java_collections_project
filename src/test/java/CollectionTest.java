@@ -15,8 +15,8 @@ public class CollectionTest {
     @Before
     public void before() {
         collection = new Collection(CollectionType.ALCOHOLIC_DRINKS);
-        item = new Drink("Smirnoff", "Red Label", "30/05/2017", 20.00, 2.00, DrinkType.VODKA);
-        item1 = new Drink("Gordon's", "Gordon's", "30/05/2018", 17.00, 1.50, DrinkType.GIN);
+        item = new Drink("Smirnoff", "Red Label", 20.00, 2.00, DrinkType.VODKA);
+        item1 = new Drink("Gordon's", "Gordon's", 17.00, 1.50, DrinkType.GIN);
     }
 
     @Test

@@ -2,7 +2,8 @@ import enums.DrinkType;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Calendar;
+
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -11,10 +12,13 @@ import static org.junit.Assert.assertEquals;
 public class DrinkTest {
 
     Drink drink;
+    Date purchaseDate;
 
     @Before
     public void before() {
-        drink = new Drink("Smirnoff", "Red Label","30/05/2017",20.00,2.00, DrinkType.VODKA);
+
+        purchaseDate = new Date(30/05/2018);
+        drink = new Drink("Smirnoff", "Red Label",20.00,2.00, DrinkType.VODKA);
     }
 
     @Test
@@ -28,8 +32,9 @@ public class DrinkTest {
     }
 
     @Test
-    public void cangetPurchaseDate() {
-        assertEquals("30/05/2017", drink.getPurchaseDate());
+    public void canSetPurchaseDate() {
+        drink.setPurchaseDate(purchaseDate);
+        assertEquals(purchaseDate, drink.getPurchaseDate());
     }
 
     @Test

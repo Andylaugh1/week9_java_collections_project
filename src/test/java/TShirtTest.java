@@ -9,7 +9,7 @@ public class TShirtTest {
 
     @Before
     public void before() {
-        tshirt = new TShirt("Decathlon", "Black", TShirtType.V_NECK, "12/06/2010", 2.99, 0.00);
+        tshirt = new TShirt("Decathlon", "Black", TShirtType.V_NECK, 2.99, 0.00);
 
     }
 
