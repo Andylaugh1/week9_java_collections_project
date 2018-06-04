@@ -18,7 +18,7 @@ public class DrinkTest {
     public void before() {
 
         purchaseDate = new Date();
-        drink = new Drink("Smirnoff", "Red Label",20.00,2.00, DrinkType.VODKA);
+        drink = new Drink("Smirnoff", "Red Label",2012,20.00,2.00, DrinkType.VODKA);
     }
 
     @Test
@@ -31,11 +31,16 @@ public class DrinkTest {
         assertEquals("Red Label", drink.getModel());
     }
 
+//    @Test
+//    public void canSetPurchaseDate() {
+//        drink.setPurchaseDate(purchaseDate);
+//        System.out.println(purchaseDate);
+//        assertEquals(purchaseDate, drink.getPurchaseDate());
+//    }
+
     @Test
-    public void canSetPurchaseDate() {
-        drink.setPurchaseDate(purchaseDate);
-        System.out.println(purchaseDate);
-        assertEquals(purchaseDate, drink.getPurchaseDate());
+    public void canGetPurchaseDate(){
+        assertEquals(2012, drink.getPurchaseYear());
     }
 
     @Test

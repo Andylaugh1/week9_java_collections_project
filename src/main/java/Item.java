@@ -8,24 +8,21 @@ public class Item implements ISell {
     private double buyPrice;
     private double shippingPrice;
     private double currentMarketValue;
-    private Date purchaseDate;
+    private int purchaseYear;
     private boolean isForResale;
     private boolean isFavourite;
 
-    public Item(double buyPrice, double shippingPrice){
+    public Item(int purchaseYear, double buyPrice, double shippingPrice){
         this.buyPrice = buyPrice;
         this.shippingPrice = shippingPrice;
-        this.purchaseDate = new Date();
+        this.purchaseYear = purchaseYear;
         this.isForResale = false;
         this.isFavourite = false;
     }
 
-    public void setPurchaseDate(Date purchaseDate) {
-        this.purchaseDate = purchaseDate;
-    }
 
-    public Date getPurchaseDate() {
-        return purchaseDate;
+    public int getPurchaseYear() {
+        return purchaseYear;
     }
 
     public double getBuyPrice() {

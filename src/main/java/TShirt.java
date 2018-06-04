@@ -6,8 +6,8 @@ public class TShirt extends Item {
     private String colour;
     private TShirtType tshirtType;
 
-    public TShirt(String brand, String colour, TShirtType tshirtType, double buyPrice, double shippingPrice) {
-        super( buyPrice, shippingPrice);
+    public TShirt(String brand, String colour, TShirtType tshirtType, int purchaseYear, double buyPrice, double shippingPrice) {
+        super(purchaseYear, buyPrice, shippingPrice);
         this.brand = brand;
         this.colour = colour;
         this.tshirtType = tshirtType;

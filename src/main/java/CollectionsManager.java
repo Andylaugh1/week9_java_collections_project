@@ -5,9 +5,11 @@ import java.util.ArrayList;
 public class CollectionsManager {
 
     private ArrayList<ISell> forSaleItems;
+    private double profit;
 
     public CollectionsManager() {
         this.forSaleItems = new ArrayList<>();
+        this.profit = 0;
     }
 
     public int countSaleItems() {

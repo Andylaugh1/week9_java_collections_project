@@ -1,9 +1,6 @@
-import enums.CollectionType;
 import enums.DrinkType;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,8 +12,8 @@ public class CollectionTest {
     @Before
     public void before() {
         collection = new Collection();
-        item = new Drink("Smirnoff", "Red Label", 20.00, 2.00, DrinkType.VODKA);
-        item1 = new Drink("Gordon's", "Gordon's", 17.00, 1.50, DrinkType.GIN);
+        item = new Drink("Smirnoff", "Red Label",2012, 20.00, 2.00, DrinkType.VODKA);
+        item1 = new Drink("Gordon's", "Gordon's",2013, 17.00, 1.50, DrinkType.GIN);
     }
 
 

@@ -1,5 +1,4 @@
 import enums.ActionFigureType;
-import enums.CollectionType;
 import enums.DrinkType;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,10 +15,10 @@ public class CollectionsManagerTest {
     public void before() {
 
 
-        item = new Drink("Smirnoff", "Red Label", 20.00, 2.00, DrinkType.VODKA);
-        item1 = new Drink("Gordon's", "Gordon's", 17.00, 1.50, DrinkType.GIN);
-        item2 = new ActionFigure("Stone Cold", ActionFigureType.WRESTLER, "Stunner", 10.00, 3.00 );
-        item3 = new ActionFigure("Wolverine", ActionFigureType.XMAN, "Regeneration", 12.00, 1.00 );
+        item = new Drink("Smirnoff", "Red Label", 2012, 20.00, 2.00, DrinkType.VODKA);
+        item1 = new Drink("Gordon's", "Gordon's", 2011,17.00, 1.50, DrinkType.GIN);
+        item2 = new ActionFigure("Stone Cold", ActionFigureType.WRESTLER, 1999,"Stunner", 10.00, 3.00 );
+        item3 = new ActionFigure("Wolverine", ActionFigureType.XMAN, 1997,"Regeneration", 12.00, 1.00 );
 
         collection = new Collection();
 

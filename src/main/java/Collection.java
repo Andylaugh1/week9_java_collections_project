@@ -1,6 +1,3 @@
-import enums.CollectionType;
-import enums.DrinkType;
-
 import java.util.ArrayList;
 
 public class Collection {
