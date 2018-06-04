@@ -71,14 +71,14 @@ public class DrinkTest {
 
     @Test
     public void canSetResaleStatusToTrue() {
-        drink.changeForSaleStatus();
+        drink.changeForSaleStatusToTrue();
         assertEquals(true, drink.getResaleStatus());
     }
 
     @Test
     public void canSetResaleStatusBackToFalse() {
-        drink.changeForSaleStatus();
-        drink.changeForSaleStatus();
+        drink.changeForSaleStatusToTrue();
+        drink.changeForSaleStatusBackToFalse();
         assertEquals(false, drink.getResaleStatus());
     }
 
@@ -91,5 +91,12 @@ public class DrinkTest {
     public void canChangeFavouriteStatus() {
         drink.changeFavouriteStatus();
         assertEquals(true, drink.getFavouriteStatus());
+    }
+
+    @Test
+    public void canChangeFavouriteStatusBackToFalse() {
+        drink.changeFavouriteStatus();
+        drink.changeFavouriteStatus();
+        assertEquals(false, drink.getFavouriteStatus());
     }
 }

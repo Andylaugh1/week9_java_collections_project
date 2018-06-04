@@ -30,7 +30,7 @@ public class TShirtTest {
 
     @Test
     public void canCalculatePotentialProfitItemIsSellable() {
-        tshirt.changeForSaleStatus();
+        tshirt.changeForSaleStatusToTrue();
         tshirt.setNewMarketValue(3.50);
         assertEquals(0.51, tshirt.calculateProfitIfSold(), 0.01);
     }

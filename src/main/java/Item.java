@@ -44,14 +44,6 @@ public class Item implements ISell {
         this.currentMarketValue = newMarketValue;
     }
 
-    public boolean getResaleStatus() {
-        return this.isForResale;
-    }
-
-    public void changeForSaleStatus() {
-        this.isForResale ^= true;
-    }
-
     public double calculateProfitIfSold() {
         double potentialProfit = 0;
         if (isForResale == true) {
@@ -66,6 +58,22 @@ public class Item implements ISell {
 
     public void changeFavouriteStatus() {
         this.isFavourite ^= true;
+    }
+
+    public boolean getResaleStatus() {
+        return this.isForResale;
+    }
+
+    public void changeForSaleStatusToTrue() {
+        if ((getFavouriteStatus() == false) && getResaleStatus() == false) {
+            this.isForResale = true;
+        }
+
+    }
+
+    public void changeForSaleStatusBackToFalse() {
+        if (getResaleStatus() == true);
+        this.isForResale = false;
     }
 
 }
