@@ -13,6 +13,15 @@ public class WrestlingFigure extends Item {
         this.finishingMove = finishingMove;
     }
 
-    
+    public String getName() {
+        return this.name;
+    }
 
+    public WrestlerType getWrestlerType() {
+        return wrestlerType;
+    }
+
+    public String getFinishingMove() {
+        return finishingMove;
+    }
 }
