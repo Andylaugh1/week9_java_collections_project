@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="943ce5b2-d3f1-484a-87ef-fec223f42816" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/DrinkTest.java" afterPath="$PROJECT_DIR$/src/test/java/DrinkTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WrestlingFigureTest.java" afterPath="$PROJECT_DIR$/src/test/java/WrestlingFigureTest.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/WrestlingFigure.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/enums/WrestlerType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/WrestlingFigureTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WrestlingFigure.java" afterPath="$PROJECT_DIR$/src/main/java/ActionFigure.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/WrestlerType.java" afterPath="$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WrestlingFigureTest.java" afterPath="$PROJECT_DIR$/src/test/java/ActionFigureTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,32 +27,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WrestlingFigure.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/WrestlingFigure.java">
+      <file leaf-file-name="ActionFigure.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ActionFigure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="361">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+                <element signature="e#560#561#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#630#631#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WrestlingFigureTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/WrestlingFigureTest.java">
+      <file leaf-file-name="ActionFigureTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ActionFigureTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="336">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,8 +65,8 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="234">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#656#657#0" expanded="true" />
@@ -84,7 +93,7 @@
       <file leaf-file-name="DrinkTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DrinkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
+            <state relative-caret-position="51">
               <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -164,11 +173,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WrestlerType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/enums/WrestlerType.java">
+      <file leaf-file-name="ActionFigureType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -498,6 +507,9 @@
         <option value="$PROJECT_DIR$/src/main/java/WrestlingFigure.java" />
         <option value="$PROJECT_DIR$/src/test/java/DrinkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/WrestlingFigureTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ActionFigure.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ActionFigureTest.java" />
       </list>
     </option>
   </component>
@@ -606,7 +618,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WrestlingFigureTest.test">
+  <component name="RunManager" selected="JUnit.ActionFigureTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -627,6 +639,46 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="ActionFigureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Week_9_collections_project_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ActionFigureTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ActionFigureTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Week_9_collections_project_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ActionFigureTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="All in Week_9_collections_project_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -668,26 +720,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CollectionTest.canCalculatePotentialProfitOfSellableItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Week_9_collections_project_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest" />
-      <option name="METHOD_NAME" value="canCalculatePotentialProfitOfSellableItems" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="DrinkTest.canSetPurchaseDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Week_9_collections_project_test" />
@@ -696,26 +728,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DrinkTest" />
       <option name="METHOD_NAME" value="canSetPurchaseDate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="WrestlingFigureTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Week_9_collections_project_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WrestlingFigureTest" />
-      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -791,17 +803,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionTest.canCalculatePotentialProfitOfSellableItems" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DrinkTest.canSetPurchaseDate" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WrestlingFigureTest.test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DrinkTest.canSetPurchaseDate" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ActionFigureTest.test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ActionFigureTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WrestlingFigureTest.test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ActionFigureTest" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.DrinkTest.canSetPurchaseDate" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionTest.canCalculatePotentialProfitOfSellableItems" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ActionFigureTest.test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -822,14 +834,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.02 at 17h 30m 18s.xml">
-      <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CollectionTest - 2018.06.02 at 17h 30m 13s.xml">
-      <configuration name="CollectionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CollectionTest_canCalculatePotentialProfitOfSellableItems - 2018.06.02 at 17h 30m 08s.xml">
-      <configuration name="CollectionTest.canCalculatePotentialProfitOfSellableItems" configurationId="JUnit" />
+    <history-entry file="ActionFigureTest - 2018.06.04 at 11h 24m 27s.xml">
+      <configuration name="ActionFigureTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DrinkTest_canSetPurchaseDate - 2018.06.04 at 10h 11m 57s.xml">
       <configuration name="DrinkTest.canSetPurchaseDate" configurationId="JUnit" />
@@ -847,6 +853,12 @@
       <configuration name="DrinkTest.canSetPurchaseDate" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DrinkTest_canSetPurchaseDate - 2018.06.04 at 11h 01m 34s.xml">
+      <configuration name="DrinkTest.canSetPurchaseDate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DrinkTest_canSetPurchaseDate - 2018.06.04 at 11h 15m 29s.xml">
+      <configuration name="DrinkTest.canSetPurchaseDate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DrinkTest_canSetPurchaseDate - 2018.06.04 at 11h 15m 46s.xml">
       <configuration name="DrinkTest.canSetPurchaseDate" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WrestlingFigureTest_test - 2018.06.04 at 11h 09m 29s.xml">
@@ -987,14 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/WrestlerType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TShirt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -1010,25 +1014,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WrestlingFigure.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/TShirtType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interface/ISell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state relative-caret-position="234">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#656#657#0" expanded="true" />
@@ -1053,7 +1058,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DrinkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
+        <state relative-caret-position="51">
           <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1075,30 +1080,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/TShirtType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="120">
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Interface/ISell.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ActionFigure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="361">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/WrestlingFigureTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ActionFigureTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="336">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
           </folding>
         </state>
       </provider>
