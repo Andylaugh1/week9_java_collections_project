@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="943ce5b2-d3f1-484a-87ef-fec223f42816" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" afterPath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/CollectionType.java" afterPath="$PROJECT_DIR$/src/main/java/enums/CollectionType.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -72,7 +71,7 @@
       <file leaf-file-name="CollectionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CollectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="-248">
               <caret line="18" column="78" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -135,25 +134,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionsManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CollectionsManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CollectionsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="285">
+              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#393#394#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionsManagerTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CollectionsManagerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="41" column="61" lean-forward="false" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+            <state relative-caret-position="198">
+              <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1244#1245#0" expanded="true" />
+                <element signature="e#1314#1315#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -521,9 +528,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ActionFigure.java" />
         <option value="$PROJECT_DIR$/src/test/java/ActionFigureTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interface/ISell.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/enums/CollectionType.java" />
         <option value="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
       </list>
     </option>
   </component>
@@ -624,7 +631,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in Week_9_collections_project_test">
+  <component name="RunManager" selected="JUnit.CollectionsManagerTest.canCountCollections">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -706,15 +713,15 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CollectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionsManagerTest.canCountCollections" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Week_9_collections_project_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="CollectionsManagerTest" />
+      <option name="METHOD_NAME" value="canCountCollections" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -808,18 +815,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DrinkTest.canSetPurchaseDate" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ActionFigureTest.test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ActionFigureTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DrinkTest.canSetPurchaseDate" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ActionFigureTest.test" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ActionFigureTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canCountCollections" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ActionFigureTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DrinkTest.canSetPurchaseDate" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ActionFigureTest.test" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canCountCollections" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ActionFigureTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DrinkTest.canSetPurchaseDate" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ActionFigureTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -846,8 +853,8 @@
     <history-entry file="All_in_Week_9_collections_project_test - 2018.06.04 at 11h 25m 06s.xml">
       <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DrinkTest_canSetPurchaseDate - 2018.06.04 at 10h 19m 53s.xml">
-      <configuration name="DrinkTest.canSetPurchaseDate" configurationId="JUnit" />
+    <history-entry file="CollectionsManagerTest_canCountCollections - 2018.06.04 at 12h 26m 35s.xml">
+      <configuration name="CollectionsManagerTest.canCountCollections" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DrinkTest_canSetPurchaseDate - 2018.06.04 at 10h 25m 34s.xml">
       <configuration name="DrinkTest.canSetPurchaseDate" configurationId="JUnit" />
@@ -883,7 +890,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -910,7 +917,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java</url>
+          <line>39</line>
+          <properties class="CollectionsManagerTest" method="canCountCollections">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1061,20 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CollectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="78" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ActionFigureTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1125,22 +1128,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CollectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="41" column="61" lean-forward="false" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+        <state relative-caret-position="-248">
+          <caret line="18" column="78" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CollectionsManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="285">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
           </folding>
         </state>
       </provider>

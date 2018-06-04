@@ -4,6 +4,8 @@ import enums.DrinkType;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class CollectionsManagerTest {
 
     CollectionsManager collectionsManager;
@@ -25,22 +27,30 @@ public class CollectionsManagerTest {
 
         collectionsManager = new CollectionsManager();
 
+        collectionsManager.addCollection(collection);
+        collectionsManager.addCollection((collection1));
+
         collection.addItem(item);
         collection.addItem(item1);
         collection1.addItem(item2);
         collection1.addItem(item3);
     }
 
-
     @Test
-    public void canAddItemsToSellableList(){
-        item.setNewMarketValue(25.00);
-        item.changeForSaleStatus();
-        item3.setNewMarketValue(16.00);
-        item3.changeForSaleStatus();
-        collectionsManager.getItemsForSale();
-        assertEquals(2, collectionsManager.countSaleItems());
+    public void canCountCollections(){
+        assertEquals(2, collectionsManager.countCollections());
     }
+
+
+//    @Test
+//    public void canAddItemsToSellableList(){
+//        item.setNewMarketValue(25.00);
+//        item.changeForSaleStatus();
+//        item3.setNewMarketValue(16.00);
+//        item3.changeForSaleStatus();
+//        collectionsManager.getItemsForSale();
+//        assertEquals(2, collectionsManager.countSaleItems());
+//    }
 
 
 }

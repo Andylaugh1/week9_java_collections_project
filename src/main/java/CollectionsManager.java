@@ -12,4 +12,16 @@ public class CollectionsManager {
         this.collections = new ArrayList<>();
     }
 
+    public int countSaleItems() {
+        return this.forSaleItems.size();
+    }
+
+    public int countCollections() {
+        return this.collections.size();
+    }
+
+    public void addCollection(Collection collection){
+        this.collections.add(collection);
+    }
+
 }
