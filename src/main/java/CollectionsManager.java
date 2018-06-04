@@ -26,5 +26,11 @@ public class CollectionsManager {
         }
    }
 
-
+    public double calculateProfitIfSold() {
+        double totalPotentialProfit = 0;
+        for (ISell item : forSaleItems) {
+            totalPotentialProfit += item.calculateProfitIfSold();
+        }
+        return totalPotentialProfit;
+    }
 }
