@@ -17,7 +17,7 @@ public class DrinkTest {
     @Before
     public void before() {
 
-        purchaseDate = new Date(30/05/2018);
+        purchaseDate = new Date();
         drink = new Drink("Smirnoff", "Red Label",20.00,2.00, DrinkType.VODKA);
     }
 
@@ -34,6 +34,7 @@ public class DrinkTest {
     @Test
     public void canSetPurchaseDate() {
         drink.setPurchaseDate(purchaseDate);
+        System.out.println(purchaseDate);
         assertEquals(purchaseDate, drink.getPurchaseDate());
     }
 
