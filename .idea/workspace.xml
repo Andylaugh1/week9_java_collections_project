@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943ce5b2-d3f1-484a-87ef-fec223f42816" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/WrestlingFigure.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/enums/WrestlerType.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/WrestlingFigureTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WrestlingFigure.java" afterPath="$PROJECT_DIR$/src/main/java/ActionFigure.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/WrestlerType.java" afterPath="$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WrestlingFigureTest.java" afterPath="$PROJECT_DIR$/src/test/java/ActionFigureTest.java" />
-    </list>
+    <list default="true" id="943ce5b2-d3f1-484a-87ef-fec223f42816" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -47,7 +39,7 @@
       <file leaf-file-name="ActionFigureTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ActionFigureTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="374">
               <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -618,7 +610,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ActionFigureTest">
+  <component name="RunManager" selected="JUnit.All in Week_9_collections_project_test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -809,10 +801,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ActionFigureTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DrinkTest.canSetPurchaseDate" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ActionFigureTest.test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ActionFigureTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DrinkTest.canSetPurchaseDate" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ActionFigureTest.test" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
       </list>
     </recent_temporary>
@@ -837,8 +829,8 @@
     <history-entry file="ActionFigureTest - 2018.06.04 at 11h 24m 27s.xml">
       <configuration name="ActionFigureTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DrinkTest_canSetPurchaseDate - 2018.06.04 at 10h 11m 57s.xml">
-      <configuration name="DrinkTest.canSetPurchaseDate" configurationId="JUnit" />
+    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.04 at 11h 25m 06s.xml">
+      <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DrinkTest_canSetPurchaseDate - 2018.06.04 at 10h 19m 53s.xml">
       <configuration name="DrinkTest.canSetPurchaseDate" configurationId="JUnit" />
@@ -867,7 +859,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1238" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1105,7 +1096,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ActionFigureTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="374">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
