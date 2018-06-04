@@ -81,4 +81,15 @@ public class DrinkTest {
         drink.changeForSaleStatus();
         assertEquals(false, drink.getResaleStatus());
     }
+
+    @Test
+    public void canGetFavouriteStatusFalse() {
+        assertEquals(false, drink.getFavouriteStatus());
+    }
+
+    @Test
+    public void canChangeFavouriteStatus() {
+        drink.changeFavouriteStatus();
+        assertEquals(true, drink.getFavouriteStatus());
+    }
 }

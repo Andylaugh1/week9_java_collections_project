@@ -10,12 +10,14 @@ public class Item implements ISell {
     private double currentMarketValue;
     private Date purchaseDate;
     private boolean isForResale;
+    private boolean isFavourite;
 
     public Item(double buyPrice, double shippingPrice){
         this.buyPrice = buyPrice;
         this.shippingPrice = shippingPrice;
         this.purchaseDate = new Date();
         this.isForResale = false;
+        this.isFavourite = false;
     }
 
     public void setPurchaseDate(Date purchaseDate) {
@@ -56,6 +58,14 @@ public class Item implements ISell {
             potentialProfit = currentMarketValue - (buyPrice + shippingPrice);
         }
         return potentialProfit;
+    }
+
+    public boolean getFavouriteStatus(){
+        return this.isFavourite;
+    }
+
+    public void changeFavouriteStatus() {
+        this.isFavourite ^= true;
     }
 
 }

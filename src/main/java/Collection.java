@@ -5,19 +5,13 @@ import java.util.ArrayList;
 
 public class Collection {
 
-    private CollectionType collectionType;
     private ArrayList<Item> items;
 
 
-    public Collection(CollectionType collectionType) {
-        this.collectionType = collectionType;
+    public Collection() {
         this.items = new ArrayList<>();
     }
 
-
-    public CollectionType getCollectionType() {
-        return collectionType;
-    }
 
     public int countItems() {
         return this.items.size();
@@ -56,21 +50,4 @@ public class Collection {
         return totalPricePaid;
     }
 
-    public ArrayList<Item> getItemsMarkedForReSale() {
-        ArrayList itemsForSale = new ArrayList<Item>();
-        for (Item item : items) {
-            if (item.getResaleStatus() == true) {
-                itemsForSale.add(item);
-            }
-        }
-        return itemsForSale;
-    }
-
-    public double calculateTotalPotentialProfitOfSellableItems() {
-        double totalPotentialProfit = 0;
-        for(Item item : items) {
-            totalPotentialProfit += item.calculateProfitIfSold();
-        }
-        return totalPotentialProfit;
-    }
 }

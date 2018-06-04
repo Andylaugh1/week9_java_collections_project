@@ -21,9 +21,9 @@ public class CollectionsManagerTest {
         item2 = new ActionFigure("Stone Cold", ActionFigureType.WRESTLER, "Stunner", 10.00, 3.00 );
         item3 = new ActionFigure("Wolverine", ActionFigureType.XMAN, "Regeneration", 12.00, 1.00 );
 
-        collection = new Collection(CollectionType.ALCOHOLIC_DRINKS);
+        collection = new Collection();
 
-        collection1 = new Collection(CollectionType.ACTION_FIGURES);
+        collection1 = new Collection();
 
         collectionsManager = new CollectionsManager();
 
