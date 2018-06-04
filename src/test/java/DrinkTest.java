@@ -83,6 +83,14 @@ public class DrinkTest {
     }
 
     @Test
+    public void cannotSetToReSellableIfSetAsFavourite() {
+        drink.changeFavouriteStatus();
+        drink.changeForSaleStatusToTrue();
+        assertEquals(true, drink.getFavouriteStatus());
+        assertEquals(false, drink.getResaleStatus());
+    }
+
+    @Test
     public void canGetFavouriteStatusFalse() {
         assertEquals(false, drink.getFavouriteStatus());
     }
