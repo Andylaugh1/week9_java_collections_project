@@ -46,6 +46,11 @@ public class CollectionsManagerTest {
     }
 
     @Test
+    public void canGetProfit() {
+        assertEquals(0.00, collectionsManager.getProfit(), 0.01);
+    }
+
+    @Test
     public void canAddItemsToSellableList(){
         item.setNewMarketValue(25.00);
         item.changeForSaleStatusToTrue();
@@ -65,7 +70,19 @@ public class CollectionsManagerTest {
         collectionsManager.addSellableItemsFromCollection(collection);
         collectionsManager.addSellableItemsFromCollection(collection1);
         assertEquals(6.00, collectionsManager.calculateProfitIfSold(), 0.01);
+    }
 
+    @Test
+    public void canSellAnItem() {
+        item.setNewMarketValue(25.00);
+        item.changeForSaleStatusToTrue();
+        item3.setNewMarketValue(16.00);
+        item3.changeForSaleStatusToTrue();
+        collectionsManager.addSellableItemsFromCollection(collection);
+        collectionsManager.addSellableItemsFromCollection(collection1);
+        collectionsManager.sellItem(item);
+        assertEquals(1, collectionsManager.countSaleItems());
+        assertEquals(3.00, collectionsManager.getProfit(), 0.01);
     }
 
 

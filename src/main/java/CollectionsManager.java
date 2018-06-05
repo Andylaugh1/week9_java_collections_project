@@ -20,6 +20,10 @@ public class CollectionsManager {
         forSaleItems.add(item);
    }
 
+   public double getProfit() {
+        return profit;
+   }
+
    public void addSellableItemsFromCollection(Collection collection) {
         for (Item item : collection.getItems()) {
             if (item.getResaleStatus() == true) {
@@ -34,5 +38,15 @@ public class CollectionsManager {
             totalPotentialProfit += item.calculateProfitIfSold();
         }
         return totalPotentialProfit;
+    }
+
+    public void sellItem(Item itemToSell) {
+        for (ISell item : forSaleItems) {
+            if (item == itemToSell) {
+                forSaleItems.remove(item);
+            }
+        }
+        double extraProfit = itemToSell.calculateProfitIfSold();
+        profit += extraProfit;
     }
 }
