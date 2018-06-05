@@ -40,13 +40,14 @@ public class CollectionsManager {
         return totalPotentialProfit;
     }
 
-    public void sellItem(Item itemToSell) {
-        for (ISell item : forSaleItems) {
-            if (item == itemToSell) {
-                forSaleItems.remove(item);
+    public void sellItem(ISell itemToSell) {
+        double extraProfit = itemToSell.calculateProfitIfSold();
+        for (ISell i : forSaleItems) {
+            if (i == itemToSell) {
+                forSaleItems.remove(i);
             }
         }
-        double extraProfit = itemToSell.calculateProfitIfSold();
         profit += extraProfit;
+
     }
 }

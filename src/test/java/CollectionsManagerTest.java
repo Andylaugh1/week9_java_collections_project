@@ -17,7 +17,7 @@ public class CollectionsManagerTest {
 
         item = new Drink("Smirnoff", "Red Label", 2012, 20.00, 2.00, DrinkType.VODKA);
         item1 = new Drink("Gordon's", "Gordon's", 2011,17.00, 1.50, DrinkType.GIN);
-        item2 = new ActionFigure("Stone Cold", ActionFigureType.WRESTLER, 1999,"Stunner", 10.00, 3.00 );
+        item2 = new ActionFigure("Stone Cold", ActionFigureType.WRESTLER, 2003,"Stunner", 10.00, 3.00 );
         item3 = new ActionFigure("Wolverine", ActionFigureType.XMAN, 1997,"Regeneration", 12.00, 1.00 );
 
         collection = new Collection();
@@ -76,14 +76,28 @@ public class CollectionsManagerTest {
     public void canSellAnItem() {
         item.setNewMarketValue(25.00);
         item.changeForSaleStatusToTrue();
-        item3.setNewMarketValue(16.00);
-        item3.changeForSaleStatusToTrue();
+        item1.setNewMarketValue(19.00);
+        item1.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(collection);
         collectionsManager.addSellableItemsFromCollection(collection1);
-        collectionsManager.sellItem(item);
+        collectionsManager.sellItem(item1);
         assertEquals(1, collectionsManager.countSaleItems());
-        assertEquals(3.00, collectionsManager.getProfit(), 0.01);
+        assertEquals(2.50, collectionsManager.getProfit(), 0.01);
     }
+
+//    @Test
+////    public void canSellTwoItems() {
+////        item.setNewMarketValue(25.00);
+////        item.changeForSaleStatusToTrue();
+////        item3.setNewMarketValue(16.00);
+////        item3.changeForSaleStatusToTrue();
+////        collectionsManager.addSellableItemsFromCollection(collection);
+////        collectionsManager.addSellableItemsFromCollection(collection1);
+////        collectionsManager.sellItem(item3);
+////        collectionsManager.sellItem(item);
+////        assertEquals(1, collectionsManager.countSaleItems());
+////        assertEquals(6.00, collectionsManager.getProfit(), 0.01);
+////    }
 
 
 }

@@ -27,12 +27,11 @@ public class ActionFigure extends Item implements IDonate {
     public String getMove() {
         return move;
     }
-//
+
     public void markForDonation(){
         if (getPurchaseYear() < 2000) {
             forDonation = true;
         }
-
     }
 
     public boolean getDonationStatus() {
