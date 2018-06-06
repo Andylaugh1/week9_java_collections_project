@@ -8,11 +8,17 @@ public class CollectionsManager {
     private ArrayList<ISell> forSaleItems;
     private ArrayList<IDonate> forDonationItems;
     private double profit;
+    private int itemsDonated;
 
     public CollectionsManager() {
         this.forSaleItems = new ArrayList<>();
         this.forDonationItems = new ArrayList<>();
         this.profit = 0;
+        this.itemsDonated = 0;
+    }
+
+    public int getItemsDonated() {
+        return this.itemsDonated;
     }
 
     public int countSaleItems() {
@@ -68,5 +74,4 @@ public class CollectionsManager {
     public void donateItem(IDonate itemToDonate) {
         forDonationItems.remove(itemToDonate);
     }
-
 }

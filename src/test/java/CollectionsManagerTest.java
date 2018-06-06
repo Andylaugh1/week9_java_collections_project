@@ -54,6 +54,11 @@ public class CollectionsManagerTest {
     }
 
     @Test
+    public void canGetDonatedItemsCount() {
+        assertEquals(0, collectionsManager.getItemsDonated());
+    }
+
+    @Test
     public void canAddItemsToSellableList(){
         item.setNewMarketValue(25.00);
         item.changeForSaleStatusToTrue();
@@ -129,5 +134,13 @@ public class CollectionsManagerTest {
         collectionsManager.donateItem(actionFigure3);
         assertEquals(0, collectionsManager.countDonationItems());
     }
+
+//    @Test
+//    public void cannotDonateItemNotInList() {
+//        actionFigure3.markForDonation();
+//        collectionsManager.donateItem(actionFigure3);
+//        assertEquals(0, collectionsManager.countItemsDonated());
+//        assertEquals(0, collectionsManager.countDonationItems());
+//    }
 
 }
