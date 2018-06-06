@@ -34,6 +34,7 @@ public class CollectionsManagerTest {
         collection.addItem(item1);
         collection1.addItem(item2);
         collection1.addItem(item3);
+        collection1.addItem(actionFigure3);
     }
 
 
@@ -139,17 +140,19 @@ public class CollectionsManagerTest {
     public void canDonateItem() {
         actionFigure3.markForDonation();
         collectionsManager.addItemForDonation(actionFigure3);
-        collectionsManager.donateItem(actionFigure3);
+        collectionsManager.donateItem(actionFigure3, collection1);
         assertEquals(0, collectionsManager.countDonationItems());
         assertEquals(1, collectionsManager.getItemsDonated());
+        assertEquals(2, collection1.countItems());
     }
 
     @Test
     public void cannotDonateItemNotInList() {
         actionFigure3.markForDonation();
-        collectionsManager.donateItem(actionFigure3);
+        collectionsManager.donateItem(actionFigure3, collection1);
         assertEquals(0, collectionsManager.getItemsDonated());
         assertEquals(0, collectionsManager.countDonationItems());
+        assertEquals(3, collection1.countItems());
     }
 
 }
