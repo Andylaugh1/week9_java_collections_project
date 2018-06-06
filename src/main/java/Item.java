@@ -4,7 +4,7 @@ import Interface.ISell;
 import java.util.Date;
 
 
-public class Item implements ISell {
+public abstract class Item implements ISell {
     private double buyPrice;
     private double shippingPrice;
     private double currentMarketValue;

@@ -8,10 +8,9 @@ import static org.junit.Assert.assertEquals;
 public class CollectionsManagerTest {
 
     CollectionsManager collectionsManager;
-    Collection collection, collection1;
-    Item item, item2, item3;
-    Item item1;
-    ActionFigure actionFigure3;
+    Collection drinkCollection, actionFigureCollection;
+    Drink item, item1;
+    ActionFigure item2, item3, actionFigure3;
 
     @Before
     public void before() {
@@ -23,18 +22,18 @@ public class CollectionsManagerTest {
         item3 = new ActionFigure("Wolverine", ActionFigureType.XMAN, 1997,"Regeneration", 12.00, 1.00 );
         actionFigure3 = new ActionFigure("Peter Venkman", ActionFigureType.GHOSTBUSTER, 1990,"Hilarity", 6.00, 0.00 );
 
-        collection = new Collection();
+        drinkCollection = new Collection();
 
-        collection1 = new Collection();
+        actionFigureCollection = new Collection();
 
         collectionsManager = new CollectionsManager();
 
 
-        collection.addItem(item);
-        collection.addItem(item1);
-        collection1.addItem(item2);
-        collection1.addItem(item3);
-        collection1.addItem(actionFigure3);
+        drinkCollection.addItem(item);
+        drinkCollection.addItem(item1);
+        actionFigureCollection.addItem(item2);
+        actionFigureCollection.addItem(item3);
+        actionFigureCollection.addItem(actionFigure3);
     }
 
 
@@ -65,8 +64,8 @@ public class CollectionsManagerTest {
         item.changeForSaleStatusToTrue();
         item3.setNewMarketValue(16.00);
         item3.changeForSaleStatusToTrue();
-        collectionsManager.addSellableItemsFromCollection(collection);
-        collectionsManager.addSellableItemsFromCollection(collection1);
+        collectionsManager.addSellableItemsFromCollection(drinkCollection);
+        collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         assertEquals(2, collectionsManager.countSaleItems());
     }
 
@@ -76,8 +75,8 @@ public class CollectionsManagerTest {
         item.changeForSaleStatusToTrue();
         item3.setNewMarketValue(16.00);
         item3.changeForSaleStatusToTrue();
-        collectionsManager.addSellableItemsFromCollection(collection);
-        collectionsManager.addSellableItemsFromCollection(collection1);
+        collectionsManager.addSellableItemsFromCollection(drinkCollection);
+        collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         assertEquals(6.00, collectionsManager.calculateProfitIfSold(), 0.01);
     }
 
@@ -87,8 +86,8 @@ public class CollectionsManagerTest {
         item.changeForSaleStatusToTrue();
         item3.setNewMarketValue(16.00);
         item3.changeForSaleStatusToTrue();
-        collectionsManager.addSellableItemsFromCollection(collection);
-        collectionsManager.addSellableItemsFromCollection(collection1);
+        collectionsManager.addSellableItemsFromCollection(drinkCollection);
+        collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         assertEquals(18.36, collectionsManager.calculateTotalPercentageProfitIfItemsSold(), 0.01);
     }
 
@@ -98,12 +97,12 @@ public class CollectionsManagerTest {
         item.changeForSaleStatusToTrue();
         item1.setNewMarketValue(19.00);
         item1.changeForSaleStatusToTrue();
-        collectionsManager.addSellableItemsFromCollection(collection);
-        collectionsManager.sellItem(item, collection);
-        collectionsManager.sellItem(item1, collection);
+        collectionsManager.addSellableItemsFromCollection(drinkCollection);
+        collectionsManager.sellItem(item, drinkCollection);
+        collectionsManager.sellItem(item1, drinkCollection);
         assertEquals(0, collectionsManager.countSaleItems());
         assertEquals(3.50, collectionsManager.getProfit(), 0.01);
-        assertEquals(0, collection.countItems());
+        assertEquals(0, drinkCollection.countItems());
     }
 
     @Test
@@ -112,8 +111,8 @@ public class CollectionsManagerTest {
         item.changeForSaleStatusToTrue();
         item1.setNewMarketValue(19.00);
         item1.changeForSaleStatusToTrue();
-        collectionsManager.addSellableItemsFromCollection(collection);
-        collectionsManager.sellItem(item3, collection);
+        collectionsManager.addSellableItemsFromCollection(drinkCollection);
+        collectionsManager.sellItem(item3, drinkCollection);
         assertEquals(2, collectionsManager.countSaleItems());
     }
 
@@ -140,19 +139,19 @@ public class CollectionsManagerTest {
     public void canDonateItem() {
         actionFigure3.markForDonation();
         collectionsManager.addItemForDonation(actionFigure3);
-        collectionsManager.donateItem(actionFigure3, collection1);
+        collectionsManager.donateItem(actionFigure3, actionFigureCollection);
         assertEquals(0, collectionsManager.countDonationItems());
         assertEquals(1, collectionsManager.getItemsDonated());
-        assertEquals(2, collection1.countItems());
+        assertEquals(2, actionFigureCollection.countItems());
     }
 
     @Test
     public void cannotDonateItemNotInList() {
         actionFigure3.markForDonation();
-        collectionsManager.donateItem(actionFigure3, collection1);
+        collectionsManager.donateItem(actionFigure3, actionFigureCollection);
         assertEquals(0, collectionsManager.getItemsDonated());
         assertEquals(0, collectionsManager.countDonationItems());
-        assertEquals(3, collection1.countItems());
+        assertEquals(3, actionFigureCollection.countItems());
     }
 
 }
