@@ -12,7 +12,7 @@ public class CollectionsManagerTest {
     CollectionsManager collectionsManager;
     Collection drinkCollection, actionFigureCollection;
     Drink item, item1;
-    ActionFigure item2, item3, actionFigure3;
+    ActionFigure item2, item3, actionFigure3, item4;
 
     @Before
     public void before() {
@@ -23,6 +23,7 @@ public class CollectionsManagerTest {
         item2 = new ActionFigure("Stone Cold", ActionFigureType.WRESTLER, 2003,"Stunner", 10.00, 3.00 );
         item3 = new ActionFigure("Wolverine", ActionFigureType.XMAN, 1997,"Regeneration", 12.00, 1.00 );
         actionFigure3 = new ActionFigure("Peter Venkman", ActionFigureType.GHOSTBUSTER, 1990,"Hilarity", 6.00, 0.00 );
+        item4 = new ActionFigure("Cyclops", ActionFigureType.XMAN, 1994,"Laser Eyes", 10.00, 2.00 );
 
         drinkCollection = new Collection();
 
@@ -182,7 +183,16 @@ public class CollectionsManagerTest {
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
         collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         collectionsManager.sortByPurchaseYear();
-        assertEquals(item3, collectionsManager.getForSaleItems().get(0));
+        assertEquals(item4, collectionsManager.getForSaleItems().get(0));
+    }
+
+    @Test
+    public void canSwapAnItem() {
+        System.out.println(actionFigureCollection.getItems());
+        collectionsManager.swapItem(actionFigureCollection, item3, item4);
+        System.out.println(actionFigureCollection.getItems());
+        assertEquals(item4, actionFigureCollection.getItems());
+
     }
 
 }

@@ -1,4 +1,5 @@
 import Interface.IDonate;
+import Interface.ISwap;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -96,4 +97,8 @@ public class CollectionsManager {
         Collections.sort(forSaleItems, new SortByYearPurchased());
     }
 
+    public void swapItem(Collection collection, Item oldItem, Item newItem) {
+        collection.removeItem(oldItem);
+        collection.addItem(newItem);
+    }
 }

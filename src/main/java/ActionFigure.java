@@ -1,4 +1,5 @@
 import Interface.IDonate;
+import Interface.ISwap;
 import enums.ActionFigureType;
 
 public class ActionFigure extends Item implements IDonate {
