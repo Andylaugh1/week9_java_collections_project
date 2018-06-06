@@ -98,8 +98,8 @@ public class CollectionsManagerTest {
         item1.setNewMarketValue(19.00);
         item1.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(collection);
-        collectionsManager.sellItem(item);
-        collectionsManager.sellItem(item1);
+        collectionsManager.sellItem(item, collection);
+        collectionsManager.sellItem(item1, collection);
         assertEquals(0, collectionsManager.countSaleItems());
         assertEquals(3.50, collectionsManager.getProfit(), 0.01);
     }
@@ -111,7 +111,7 @@ public class CollectionsManagerTest {
         item1.setNewMarketValue(19.00);
         item1.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(collection);
-        collectionsManager.sellItem(item3);
+        collectionsManager.sellItem(item3, collection);
         assertEquals(2, collectionsManager.countSaleItems());
     }
 
@@ -140,6 +140,7 @@ public class CollectionsManagerTest {
         collectionsManager.addItemForDonation(actionFigure3);
         collectionsManager.donateItem(actionFigure3);
         assertEquals(0, collectionsManager.countDonationItems());
+        assertEquals(1, collectionsManager.getItemsDonated());
     }
 
     @Test

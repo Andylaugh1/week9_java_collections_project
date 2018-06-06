@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class CollectionsManager {
 
-    private ArrayList<ISell> forSaleItems;
+    private ArrayList<Item> forSaleItems;
     private ArrayList<IDonate> forDonationItems;
     private double profit;
     private int itemsDonated;
@@ -29,7 +29,7 @@ public class CollectionsManager {
         return this.forDonationItems.size();
     }
 
-   public void addSaleItem(ISell item) {
+   public void addSaleItem(Item item) {
         forSaleItems.add(item);
    }
 
@@ -47,7 +47,7 @@ public class CollectionsManager {
 
     public double calculateProfitIfSold() {
         double totalPotentialProfit = 0;
-        for (ISell item : forSaleItems) {
+        for (Item item : forSaleItems) {
             totalPotentialProfit += item.calculateProfitIfSold();
         }
         return totalPotentialProfit;
@@ -55,15 +55,16 @@ public class CollectionsManager {
 
     public double calculateTotalPercentageProfitIfItemsSold() {
         double totalPotentialPercentageProfit = 0;
-        for (ISell item : forSaleItems) {
+        for (Item item : forSaleItems) {
             totalPotentialPercentageProfit += (item.calculatePercentageProfitIfSold() / countSaleItems());
         }
         return totalPotentialPercentageProfit;
     }
 
-    public void sellItem(ISell itemToSell) {
+    public void sellItem(Item itemToSell, Collection collection) {
         double extraProfit = itemToSell.calculateProfitIfSold();
         forSaleItems.remove(itemToSell);
+        collection.removeItem(itemToSell);
         profit += extraProfit;
     }
 
