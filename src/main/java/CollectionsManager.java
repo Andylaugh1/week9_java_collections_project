@@ -92,4 +92,8 @@ public class CollectionsManager {
         Collections.sort(forSaleItems, new SortByProfit());
     }
 
+    public void sortByPurchaseYear() {
+        Collections.sort(forSaleItems, new SortByYearPurchased());
+    }
+
 }

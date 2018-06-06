@@ -171,4 +171,18 @@ public class CollectionsManagerTest {
         assertEquals(item1, collectionsManager.getForSaleItems().get(0));
     }
 
+    @Test
+    public void canSortSellableItemsByPurchaseYear() {
+        item.setNewMarketValue(25.00);
+        item.changeForSaleStatusToTrue();
+        item1.setNewMarketValue(28.00);
+        item1.changeForSaleStatusToTrue();
+        item3.setNewMarketValue(13.00);
+        item3.changeForSaleStatusToTrue();
+        collectionsManager.addSellableItemsFromCollection(drinkCollection);
+        collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
+        collectionsManager.sortByPurchaseYear();
+        assertEquals(item3, collectionsManager.getForSaleItems().get(0));
+    }
+
 }
