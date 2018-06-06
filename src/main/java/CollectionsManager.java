@@ -47,6 +47,14 @@ public class CollectionsManager {
         return totalPotentialProfit;
     }
 
+    public double calculateTotalPercentageProfitIfItemsSold() {
+        double totalPotentialPercentageProfit = 0;
+        for (ISell item : forSaleItems) {
+            totalPotentialPercentageProfit += (item.calculatePercentageProfitIfSold() / countSaleItems());
+        }
+        return totalPotentialPercentageProfit;
+    }
+
     public void sellItem(ISell itemToSell) {
         double extraProfit = itemToSell.calculateProfitIfSold();
         forSaleItems.remove(itemToSell);

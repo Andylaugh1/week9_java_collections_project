@@ -74,6 +74,17 @@ public class CollectionsManagerTest {
     }
 
     @Test
+    public void canCalculateTotalPercentageProfitIfSold() {
+        item.setNewMarketValue(25.00);
+        item.changeForSaleStatusToTrue();
+        item3.setNewMarketValue(16.00);
+        item3.changeForSaleStatusToTrue();
+        collectionsManager.addSellableItemsFromCollection(collection);
+        collectionsManager.addSellableItemsFromCollection(collection1);
+        assertEquals(18.36, collectionsManager.calculateTotalPercentageProfitIfItemsSold(), 0.01);
+    }
+
+    @Test
     public void canSellAnItem() {
         item.setNewMarketValue(25.00);
         item.changeForSaleStatusToTrue();
