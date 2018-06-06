@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Collection {
 
@@ -45,6 +46,10 @@ public class Collection {
     public double calculateTotalPricePaid() {
         double totalPricePaid = calculateTotalItemPricePaid() + calculateTotalShippingPricePaid();
         return totalPricePaid;
+    }
+
+    public void sortByPurchaseYear(){
+        Collections.sort(items, new SortByYearPurchased());
     }
 
 }
