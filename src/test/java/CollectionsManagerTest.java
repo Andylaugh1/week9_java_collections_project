@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
@@ -191,7 +192,7 @@ public class CollectionsManagerTest {
         System.out.println(actionFigureCollection.getItems());
         collectionsManager.swapItem(actionFigureCollection, actionFigure2, actionFigure4);
         System.out.println(actionFigureCollection.getItems());
-        assertEquals(actionFigure4, actionFigureCollection.getItems());
+        assertEquals(Arrays.asList(actionFigure1, actionFigure3, actionFigure4), actionFigureCollection.getItems());
 
     }
 
