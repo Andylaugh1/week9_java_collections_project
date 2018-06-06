@@ -76,6 +76,9 @@ public class CollectionsManager {
     }
 
     public void donateItem(IDonate itemToDonate) {
-        forDonationItems.remove(itemToDonate);
+        if (findItemForDonation(itemToDonate) == true) {
+            forDonationItems.remove(itemToDonate);
+            itemsDonated += 1;
+        }
     }
 }

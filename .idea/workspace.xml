@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="943ce5b2-d3f1-484a-87ef-fec223f42816" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" afterPath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,8 +50,8 @@
       <file leaf-file-name="CollectionsManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CollectionsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+            <state relative-caret-position="377">
+              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#493#494#0" expanded="true" />
@@ -69,8 +68,6 @@
                 <element signature="e#1943#1944#0" expanded="true" />
                 <element signature="e#1999#2000#0" expanded="true" />
                 <element signature="e#2053#2054#0" expanded="true" />
-                <element signature="e#2105#2106#0" expanded="true" />
-                <element signature="e#2158#2159#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,7 +121,7 @@
       <file leaf-file-name="CollectionsManagerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
+            <state relative-caret-position="64">
               <caret line="133" column="79" lean-forward="false" selection-start-line="133" selection-start-column="79" selection-end-line="133" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -501,8 +498,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Item.java" />
         <option value="$PROJECT_DIR$/src/test/java/DrinkTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interface/ISell.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
       </list>
     </option>
   </component>
@@ -615,7 +612,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionsManagerTest.checkIfItemForDonationIsInListBeforeDonation">
+  <component name="RunManager" selected="JUnit.CollectionsManagerTest.cannotDonateItemNotInList">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -637,15 +634,15 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="CollectionsManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in Week_9_collections_project_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Week_9_collections_project_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectionsManagerTest" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -657,15 +654,15 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CollectionsManagerTest.canDonateItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionsManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Week_9_collections_project_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CollectionsManagerTest" />
-      <option name="METHOD_NAME" value="canDonateItem" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -798,19 +795,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canDonateItem" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.cannotDonateItemNotInList" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canGetDonatedItemsCount" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.checkIfItemForDonationIsInListBeforeDonation" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.cannotDonateItemNotInList" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canGetDonatedItemsCount" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.checkIfItemForDonationIsInListBeforeDonation" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.checkIfItemForDonationIsInListBeforeDonation" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canGetDonatedItemsCount" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.cannotDonateItemNotInList" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canDonateItem" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.cannotDonateItemNotInList" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.checkIfItemForDonationIsInListBeforeDonation" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canGetDonatedItemsCount" />
       </list>
     </recent_temporary>
   </component>
@@ -837,6 +834,9 @@
     <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 09h 48m 25s.xml">
       <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 10h 15m 37s.xml">
+      <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CollectionsManagerTest - 2018.06.06 at 10h 08m 41s.xml">
       <configuration name="CollectionsManagerTest" configurationId="JUnit" />
     </history-entry>
@@ -852,14 +852,11 @@
     <history-entry file="CollectionsManagerTest_cannotDonateItemNotInList - 2018.06.06 at 10h 01m 49s.xml">
       <configuration name="CollectionsManagerTest.cannotDonateItemNotInList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CollectionsManagerTest_cannotDonateItemNotInList - 2018.06.06 at 10h 21m 30s.xml">
+      <configuration name="CollectionsManagerTest.cannotDonateItemNotInList" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CollectionsManagerTest_checkIfItemForDonationIsInListBeforeDonation - 2018.06.06 at 10h 13m 28s.xml">
       <configuration name="CollectionsManagerTest.checkIfItemForDonationIsInListBeforeDonation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DrinkTest_cannotCalculatePercentageProfitIfItemNotSellable - 2018.06.06 at 08h 59m 37s.xml">
-      <configuration name="DrinkTest.cannotCalculatePercentageProfitIfItemNotSellable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DrinkTest_cannotCalculateProfitIfItemNotSellable - 2018.06.06 at 08h 57m 00s.xml">
-      <configuration name="DrinkTest.cannotCalculateProfitIfItemNotSellable" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -994,8 +991,6 @@
             <element signature="e#1943#1944#0" expanded="true" />
             <element signature="e#1999#2000#0" expanded="true" />
             <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2105#2106#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1137,8 +1132,6 @@
             <element signature="e#1943#1944#0" expanded="true" />
             <element signature="e#1999#2000#0" expanded="true" />
             <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2105#2106#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1376,8 +1369,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CollectionsManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="80" column="1" lean-forward="true" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        <state relative-caret-position="377">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#493#494#0" expanded="true" />
@@ -1394,15 +1387,13 @@
             <element signature="e#1943#1944#0" expanded="true" />
             <element signature="e#1999#2000#0" expanded="true" />
             <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2105#2106#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
+        <state relative-caret-position="64">
           <caret line="133" column="79" lean-forward="false" selection-start-line="133" selection-start-column="79" selection-end-line="133" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
