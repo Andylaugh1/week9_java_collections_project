@@ -61,15 +61,8 @@ public class CollectionsManager {
         profit += extraProfit;
     }
 
-//    public void addItemForDonation(Collection collection) {
-//        for (ActionFigure item : collection.getItems()) {
-//            if (ActionFigure.getDonationStatus() == true) {
-//                forDonationItems.add(item);
-//            }
-//        }
-//    }
-//
-//    public void donateItem(IDonate itemToDonate) {
-//        forDonationItems.remove(itemToDonate);
-//    }
+    public void addItemForDonation(IDonate item) {
+        forDonationItems.add(item);
+            }
+
 }

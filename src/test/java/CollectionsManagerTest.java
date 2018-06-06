@@ -11,6 +11,7 @@ public class CollectionsManagerTest {
     Collection collection, collection1;
     Item item, item2, item3;
     Item item1;
+    ActionFigure actionFigure3;
 
     @Before
     public void before() {
@@ -20,6 +21,7 @@ public class CollectionsManagerTest {
         item1 = new Drink("Gordon's", "Gordon's", 2011,17.00, 1.50, DrinkType.GIN);
         item2 = new ActionFigure("Stone Cold", ActionFigureType.WRESTLER, 2003,"Stunner", 10.00, 3.00 );
         item3 = new ActionFigure("Wolverine", ActionFigureType.XMAN, 1997,"Regeneration", 12.00, 1.00 );
+        actionFigure3 = new ActionFigure("Peter Venkman", ActionFigureType.GHOSTBUSTER, 1990,"Hilarity", 6.00, 0.00 );
 
         collection = new Collection();
 
@@ -115,7 +117,9 @@ public class CollectionsManagerTest {
 
     @Test
     public void canAddAnItemForDonation() {
-
+        actionFigure3.markForDonation();
+        collectionsManager.addItemForDonation(actionFigure3);
+        assertEquals(1, collectionsManager.countDonationItems());
     }
 
     @Test
