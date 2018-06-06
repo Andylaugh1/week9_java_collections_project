@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="943ce5b2-d3f1-484a-87ef-fec223f42816" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/SortByYearPurchased.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Collection.java" afterPath="$PROJECT_DIR$/src/main/java/Collection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" afterPath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CollectionTest.java" afterPath="$PROJECT_DIR$/src/test/java/CollectionTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -109,8 +107,8 @@
       <file leaf-file-name="CollectionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CollectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+            <state relative-caret-position="-419">
+              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -498,7 +496,6 @@
         <option value="$PROJECT_DIR$/src/test/java/DrinkTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interface/ISell.java" />
         <option value="$PROJECT_DIR$/src/main/java/Item.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CollectionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SortClasses/SortByProfit.java" />
         <option value="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
@@ -506,6 +503,7 @@
         <option value="$PROJECT_DIR$/src/main/java/SortClasses/SortByYearPurchased.java" />
         <option value="$PROJECT_DIR$/src/main/java/SortByYearPurchased.java" />
         <option value="$PROJECT_DIR$/src/main/java/Collection.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CollectionTest.java" />
       </list>
     </option>
   </component>
@@ -618,7 +616,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionsManagerTest.canSortSellableItemsByPotentialProfit">
+  <component name="RunManager" selected="JUnit.CollectionTest.canSortCollectionByPurchaseYear">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -680,14 +678,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CollectionsManagerTest.canDonateItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionTest.canSortCollectionByPurchaseYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Week_9_collections_project_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectionsManagerTest" />
-      <option name="METHOD_NAME" value="canDonateItem" />
+      <option name="MAIN_CLASS_NAME" value="CollectionTest" />
+      <option name="METHOD_NAME" value="canSortCollectionByPurchaseYear" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -803,17 +801,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.cannotDonateItemNotInList" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canDonateItem" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPotentialProfit" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPotentialProfit" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionTest.canSortCollectionByPurchaseYear" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPotentialProfit" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.cannotDonateItemNotInList" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canDonateItem" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionTest.canSortCollectionByPurchaseYear" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPotentialProfit" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.cannotDonateItemNotInList" />
       </list>
     </recent_temporary>
   </component>
@@ -834,14 +832,14 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 13h 31m 06s.xml">
-      <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
+    <history-entry file="CollectionTest_canSortCollectionByPurchaseYear - 2018.06.06 at 16h 28m 16s.xml">
+      <configuration name="CollectionTest.canSortCollectionByPurchaseYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionTest - 2018.06.06 at 13h 51m 47s.xml">
-      <configuration name="CollectionTest" configurationId="JUnit" />
+    <history-entry file="CollectionTest_canSortCollectionByPurchaseYear - 2018.06.06 at 16h 28m 25s.xml">
+      <configuration name="CollectionTest.canSortCollectionByPurchaseYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionsManagerTest_canSortSellableItemsByPotentialProfit - 2018.06.06 at 15h 55m 38s.xml">
-      <configuration name="CollectionsManagerTest.canSortSellableItemsByPotentialProfit" configurationId="JUnit" />
+    <history-entry file="CollectionTest_canSortCollectionByPurchaseYear - 2018.06.06 at 16h 28m 36s.xml">
+      <configuration name="CollectionTest.canSortCollectionByPurchaseYear" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CollectionsManagerTest_canSortSellableItemsByPotentialProfit - 2018.06.06 at 15h 56m 29s.xml">
       <configuration name="CollectionsManagerTest.canSortSellableItemsByPotentialProfit" configurationId="JUnit" />
@@ -879,7 +877,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28970587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28970587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1443,8 +1441,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CollectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+        <state relative-caret-position="-419">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
           <folding />
         </state>
       </provider>

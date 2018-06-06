@@ -13,7 +13,7 @@ public class CollectionTest {
     public void before() {
         drinkCollection = new Collection();
         drink = new Drink("Smirnoff", "Red Label",2012, 20.00, 2.00, DrinkType.VODKA);
-        drink1 = new Drink("Gordon's", "Gordon's",2013, 17.00, 1.50, DrinkType.GIN);
+        drink1 = new Drink("Gordon's", "Gordon's",2011, 17.00, 1.50, DrinkType.GIN);
     }
 
 
@@ -54,6 +54,14 @@ public class CollectionTest {
         drinkCollection.addItem(drink1);
         drinkCollection.addItem(drink);
         assertEquals(40.50, drinkCollection.calculateTotalPricePaid(), 0.01);
+    }
+
+    @Test
+    public void canSortCollectionByPurchaseYear() {
+        drinkCollection.addItem(drink1);
+        drinkCollection.addItem(drink);
+        drinkCollection.sortByPurchaseYear();
+        assertEquals(drink1, drinkCollection.getItems().get(0));
     }
 
 
