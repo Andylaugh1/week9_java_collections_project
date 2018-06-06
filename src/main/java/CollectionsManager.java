@@ -2,6 +2,8 @@ import Interface.IDonate;
 import Interface.ISell;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class CollectionsManager {
 
@@ -19,6 +21,10 @@ public class CollectionsManager {
 
     public int getItemsDonated() {
         return this.itemsDonated;
+    }
+
+    public ArrayList getForSaleItems(){
+        return forSaleItems;
     }
 
     public int countSaleItems() {
@@ -83,4 +89,9 @@ public class CollectionsManager {
             itemsDonated += 1;
         }
     }
+
+    public void sortByProfit(){
+        Collections.sort(forSaleItems, new SortByProfit());
+    }
+
 }

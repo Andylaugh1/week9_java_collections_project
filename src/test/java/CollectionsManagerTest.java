@@ -3,6 +3,8 @@ import enums.DrinkType;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class CollectionsManagerTest {
@@ -152,6 +154,21 @@ public class CollectionsManagerTest {
         assertEquals(0, collectionsManager.getItemsDonated());
         assertEquals(0, collectionsManager.countDonationItems());
         assertEquals(3, actionFigureCollection.countItems());
+    }
+
+    @Test
+    public void canSortSellableItemsByPotentialProfit() {
+        item.setNewMarketValue(25.00);
+        item.changeForSaleStatusToTrue();
+        item1.setNewMarketValue(28.00);
+        item1.changeForSaleStatusToTrue();
+        item3.setNewMarketValue(13.00);
+        item3.changeForSaleStatusToTrue();
+        collectionsManager.addSellableItemsFromCollection(drinkCollection);
+        collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
+        collectionsManager.sortByProfit();
+        System.out.println(collectionsManager.getForSaleItems());
+        assertEquals(item1, collectionsManager.getForSaleItems().get(0));
     }
 
 }
