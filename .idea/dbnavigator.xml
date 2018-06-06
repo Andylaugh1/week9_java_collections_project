@@ -22,12 +22,25 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
-    <loaded-nodes />
+    <show-object-properties value="false" />
+    <loaded-nodes>
+      <connection connection-id="3a8e8a61-a2ee-46fa-b132-2583d8f36cda">
+        <schema name="information_schema" object-types="function, sequence, table, view" />
+        <schema name="pg_catalog" object-types="function, sequence, table, view" />
+        <schema name="pg_toast_temp_1" object-types="function, sequence, table, view" />
+        <schema name="public" object-types="function, sequence, table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="3a8e8a61-a2ee-46fa-b132-2583d8f36cda">
-      <console name="Collections" type="STANDARD" />
+      <console name="Collections" type="STANDARD"><![CDATA[DROP TABLE testingTable;
+
+CREATE TABLE testingTable (
+myfield INT
+);
+
+VIEW TABLE testingTable]]></console>
     </connection>
     <connection id="d20d8d53-29e8-44a9-984d-90e0eca0665e">
       <console name="Connection" type="STANDARD" />

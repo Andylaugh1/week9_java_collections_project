@@ -9,7 +9,8 @@ public class CollectionsManagerTest {
 
     CollectionsManager collectionsManager;
     Collection collection, collection1;
-    Item item, item1, item2, item3;
+    Item item, item2, item3;
+    Item item1;
 
     @Before
     public void before() {
@@ -79,25 +80,35 @@ public class CollectionsManagerTest {
         item1.setNewMarketValue(19.00);
         item1.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(collection);
-        collectionsManager.addSellableItemsFromCollection(collection1);
+        collectionsManager.sellItem(item);
         collectionsManager.sellItem(item1);
-        assertEquals(1, collectionsManager.countSaleItems());
-        assertEquals(2.50, collectionsManager.getProfit(), 0.01);
+        assertEquals(0, collectionsManager.countSaleItems());
+        assertEquals(3.50, collectionsManager.getProfit(), 0.01);
     }
 
-//    @Test
-////    public void canSellTwoItems() {
-////        item.setNewMarketValue(25.00);
-////        item.changeForSaleStatusToTrue();
-////        item3.setNewMarketValue(16.00);
-////        item3.changeForSaleStatusToTrue();
-////        collectionsManager.addSellableItemsFromCollection(collection);
-////        collectionsManager.addSellableItemsFromCollection(collection1);
-////        collectionsManager.sellItem(item3);
-////        collectionsManager.sellItem(item);
-////        assertEquals(1, collectionsManager.countSaleItems());
-////        assertEquals(6.00, collectionsManager.getProfit(), 0.01);
-////    }
+    @Test
+    public void cannotSellItemIfNotInArray() {
+        item.setNewMarketValue(25.00);
+        item.changeForSaleStatusToTrue();
+        item1.setNewMarketValue(19.00);
+        item1.changeForSaleStatusToTrue();
+        collectionsManager.addSellableItemsFromCollection(collection);
+        collectionsManager.sellItem(item3);
+        assertEquals(2, collectionsManager.countSaleItems());
+    }
 
+    @Test
+    public void canCountDonationItems() {
+        assertEquals(0, collectionsManager.countDonationItems());
+    }
+
+    @Test
+    public void canAddAnItemForDonation() {
+
+    }
+
+    @Test
+    public void canDonateItem() {
+    }
 
 }

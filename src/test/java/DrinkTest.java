@@ -31,12 +31,6 @@ public class DrinkTest {
         assertEquals("Red Label", drink.getModel());
     }
 
-//    @Test
-//    public void canSetPurchaseDate() {
-//        drink.setPurchaseDate(purchaseDate);
-//        System.out.println(purchaseDate);
-//        assertEquals(purchaseDate, drink.getPurchaseDate());
-//    }
 
     @Test
     public void canGetPurchaseDate(){
@@ -94,6 +88,20 @@ public class DrinkTest {
         assertEquals(true, drink.getFavouriteStatus());
         assertEquals(false, drink.getResaleStatus());
     }
+
+    @Test
+    public void canCalculatePotentialProfitItemIsSellable() {
+        drink.changeForSaleStatusToTrue();
+        drink.setNewMarketValue(25.00);
+        assertEquals(3.00, drink.calculateProfitIfSold(), 0.01);
+     }
+
+     @Test
+     public void canCalcuatePercentageProfitIfSold() {
+        drink.changeForSaleStatusToTrue();
+        drink.setNewMarketValue(25.00);
+        assertEquals(13.64, drink.calculatePercentageProfitIfSold(), 0.01);
+     }
 
     @Test
     public void canGetFavouriteStatusFalse() {
