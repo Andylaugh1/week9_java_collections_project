@@ -71,6 +71,10 @@ public class CollectionsManager {
         forDonationItems.add(item);
     }
 
+    public boolean findItemForDonation(IDonate item) {
+        return forDonationItems.contains(item);
+    }
+
     public void donateItem(IDonate itemToDonate) {
         forDonationItems.remove(itemToDonate);
     }

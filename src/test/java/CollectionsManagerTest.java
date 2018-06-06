@@ -128,6 +128,13 @@ public class CollectionsManagerTest {
     }
 
     @Test
+    public void checkIfItemForDonationIsInListBeforeDonation() {
+        actionFigure3.markForDonation();
+        collectionsManager.addItemForDonation(actionFigure3);
+        assertEquals(true, collectionsManager.findItemForDonation(actionFigure3));
+    }
+
+    @Test
     public void canDonateItem() {
         actionFigure3.markForDonation();
         collectionsManager.addItemForDonation(actionFigure3);
@@ -135,12 +142,12 @@ public class CollectionsManagerTest {
         assertEquals(0, collectionsManager.countDonationItems());
     }
 
-//    @Test
-//    public void cannotDonateItemNotInList() {
-//        actionFigure3.markForDonation();
-//        collectionsManager.donateItem(actionFigure3);
-//        assertEquals(0, collectionsManager.countItemsDonated());
-//        assertEquals(0, collectionsManager.countDonationItems());
-//    }
+    @Test
+    public void cannotDonateItemNotInList() {
+        actionFigure3.markForDonation();
+        collectionsManager.donateItem(actionFigure3);
+        assertEquals(0, collectionsManager.getItemsDonated());
+        assertEquals(0, collectionsManager.countDonationItems());
+    }
 
 }
