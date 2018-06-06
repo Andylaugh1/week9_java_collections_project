@@ -11,19 +11,19 @@ public class CollectionsManagerTest {
 
     CollectionsManager collectionsManager;
     Collection drinkCollection, actionFigureCollection;
-    Drink item, item1;
-    ActionFigure item2, item3, actionFigure3, item4;
+    Drink drink1, drink2;
+    ActionFigure actionFigure1, actionFigure2, actionFigure3, actionFigure4;
 
     @Before
     public void before() {
 
 
-        item = new Drink("Smirnoff", "Red Label", 2012, 20.00, 2.00, DrinkType.VODKA);
-        item1 = new Drink("Gordon's", "Gordon's", 2011,17.00, 1.50, DrinkType.GIN);
-        item2 = new ActionFigure("Stone Cold", ActionFigureType.WRESTLER, 2003,"Stunner", 10.00, 3.00 );
-        item3 = new ActionFigure("Wolverine", ActionFigureType.XMAN, 1997,"Regeneration", 12.00, 1.00 );
+        drink1 = new Drink("Smirnoff", "Red Label", 2012, 20.00, 2.00, DrinkType.VODKA);
+        drink2 = new Drink("Gordon's", "Gordon's", 2011,17.00, 1.50, DrinkType.GIN);
+        actionFigure1 = new ActionFigure("Stone Cold", ActionFigureType.WRESTLER, 2003,"Stunner", 10.00, 3.00 );
+        actionFigure2 = new ActionFigure("Wolverine", ActionFigureType.XMAN, 1997,"Regeneration", 12.00, 1.00 );
         actionFigure3 = new ActionFigure("Peter Venkman", ActionFigureType.GHOSTBUSTER, 1990,"Hilarity", 6.00, 0.00 );
-        item4 = new ActionFigure("Cyclops", ActionFigureType.XMAN, 1994,"Laser Eyes", 10.00, 2.00 );
+        actionFigure4 = new ActionFigure("Cyclops", ActionFigureType.XMAN, 1994,"Laser Eyes", 10.00, 2.00 );
 
         drinkCollection = new Collection();
 
@@ -32,10 +32,10 @@ public class CollectionsManagerTest {
         collectionsManager = new CollectionsManager();
 
 
-        drinkCollection.addItem(item);
-        drinkCollection.addItem(item1);
-        actionFigureCollection.addItem(item2);
-        actionFigureCollection.addItem(item3);
+        drinkCollection.addItem(drink1);
+        drinkCollection.addItem(drink2);
+        actionFigureCollection.addItem(actionFigure1);
+        actionFigureCollection.addItem(actionFigure2);
         actionFigureCollection.addItem(actionFigure3);
     }
 
@@ -47,7 +47,7 @@ public class CollectionsManagerTest {
 
     @Test
     public void canAddSellableItem(){
-        collectionsManager.addSaleItem(item1);
+        collectionsManager.addSaleItem(drink2);
         assertEquals(1, collectionsManager.countSaleItems());
     }
 
@@ -63,10 +63,10 @@ public class CollectionsManagerTest {
 
     @Test
     public void canAddItemsToSellableList(){
-        item.setNewMarketValue(25.00);
-        item.changeForSaleStatusToTrue();
-        item3.setNewMarketValue(16.00);
-        item3.changeForSaleStatusToTrue();
+        drink1.setNewMarketValue(25.00);
+        drink1.changeForSaleStatusToTrue();
+        actionFigure2.setNewMarketValue(16.00);
+        actionFigure2.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
         collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         assertEquals(2, collectionsManager.countSaleItems());
@@ -74,10 +74,10 @@ public class CollectionsManagerTest {
 
     @Test
     public void canCalculateProfitIfSold(){
-        item.setNewMarketValue(25.00);
-        item.changeForSaleStatusToTrue();
-        item3.setNewMarketValue(16.00);
-        item3.changeForSaleStatusToTrue();
+        drink1.setNewMarketValue(25.00);
+        drink1.changeForSaleStatusToTrue();
+        actionFigure2.setNewMarketValue(16.00);
+        actionFigure2.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
         collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         assertEquals(6.00, collectionsManager.calculateProfitIfSold(), 0.01);
@@ -85,10 +85,10 @@ public class CollectionsManagerTest {
 
     @Test
     public void canCalculateTotalPercentageProfitIfSold() {
-        item.setNewMarketValue(25.00);
-        item.changeForSaleStatusToTrue();
-        item3.setNewMarketValue(16.00);
-        item3.changeForSaleStatusToTrue();
+        drink1.setNewMarketValue(25.00);
+        drink1.changeForSaleStatusToTrue();
+        actionFigure2.setNewMarketValue(16.00);
+        actionFigure2.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
         collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         assertEquals(18.36, collectionsManager.calculateTotalPercentageProfitIfItemsSold(), 0.01);
@@ -96,13 +96,13 @@ public class CollectionsManagerTest {
 
     @Test
     public void canSellAnItem() {
-        item.setNewMarketValue(25.00);
-        item.changeForSaleStatusToTrue();
-        item1.setNewMarketValue(19.00);
-        item1.changeForSaleStatusToTrue();
+        drink1.setNewMarketValue(25.00);
+        drink1.changeForSaleStatusToTrue();
+        drink2.setNewMarketValue(19.00);
+        drink2.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
-        collectionsManager.sellItem(item, drinkCollection);
-        collectionsManager.sellItem(item1, drinkCollection);
+        collectionsManager.sellItem(drink1, drinkCollection);
+        collectionsManager.sellItem(drink2, drinkCollection);
         assertEquals(0, collectionsManager.countSaleItems());
         assertEquals(3.50, collectionsManager.getProfit(), 0.01);
         assertEquals(0, drinkCollection.countItems());
@@ -110,12 +110,12 @@ public class CollectionsManagerTest {
 
     @Test
     public void cannotSellItemIfNotInArray() {
-        item.setNewMarketValue(25.00);
-        item.changeForSaleStatusToTrue();
-        item1.setNewMarketValue(19.00);
-        item1.changeForSaleStatusToTrue();
+        drink1.setNewMarketValue(25.00);
+        drink1.changeForSaleStatusToTrue();
+        drink2.setNewMarketValue(19.00);
+        drink2.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
-        collectionsManager.sellItem(item3, drinkCollection);
+        collectionsManager.sellItem(actionFigure2, drinkCollection);
         assertEquals(2, collectionsManager.countSaleItems());
     }
 
@@ -159,39 +159,39 @@ public class CollectionsManagerTest {
 
     @Test
     public void canSortSellableItemsByPotentialProfit() {
-        item.setNewMarketValue(25.00);
-        item.changeForSaleStatusToTrue();
-        item1.setNewMarketValue(28.00);
-        item1.changeForSaleStatusToTrue();
-        item3.setNewMarketValue(13.00);
-        item3.changeForSaleStatusToTrue();
+        drink1.setNewMarketValue(25.00);
+        drink1.changeForSaleStatusToTrue();
+        drink2.setNewMarketValue(28.00);
+        drink2.changeForSaleStatusToTrue();
+        actionFigure2.setNewMarketValue(13.00);
+        actionFigure2.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
         collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         collectionsManager.sortByProfit();
         System.out.println(collectionsManager.getForSaleItems());
-        assertEquals(item1, collectionsManager.getForSaleItems().get(0));
+        assertEquals(drink2, collectionsManager.getForSaleItems().get(0));
     }
 
     @Test
     public void canSortSellableItemsByPurchaseYear() {
-        item.setNewMarketValue(25.00);
-        item.changeForSaleStatusToTrue();
-        item1.setNewMarketValue(28.00);
-        item1.changeForSaleStatusToTrue();
-        item3.setNewMarketValue(13.00);
-        item3.changeForSaleStatusToTrue();
+        drink1.setNewMarketValue(25.00);
+        drink1.changeForSaleStatusToTrue();
+        drink2.setNewMarketValue(28.00);
+        drink2.changeForSaleStatusToTrue();
+        actionFigure2.setNewMarketValue(13.00);
+        actionFigure2.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
         collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         collectionsManager.sortByPurchaseYear();
-        assertEquals(item4, collectionsManager.getForSaleItems().get(0));
+        assertEquals(actionFigure2, collectionsManager.getForSaleItems().get(0));
     }
 
     @Test
     public void canSwapAnItem() {
         System.out.println(actionFigureCollection.getItems());
-        collectionsManager.swapItem(actionFigureCollection, item3, item4);
+        collectionsManager.swapItem(actionFigureCollection, actionFigure2, actionFigure4);
         System.out.println(actionFigureCollection.getItems());
-        assertEquals(item4, actionFigureCollection.getItems());
+        assertEquals(actionFigure4, actionFigureCollection.getItems());
 
     }
 

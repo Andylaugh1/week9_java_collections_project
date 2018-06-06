@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="943ce5b2-d3f1-484a-87ef-fec223f42816" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ActionFigure.java" afterPath="$PROJECT_DIR$/src/main/java/ActionFigure.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" afterPath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Interface/ISwap.java" afterPath="$PROJECT_DIR$/src/main/java/Interface/ISwap.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -108,18 +105,18 @@
       <file leaf-file-name="CollectionsManagerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="185" column="26" lean-forward="false" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+            <state relative-caret-position="1755">
+              <caret line="185" column="34" lean-forward="false" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1544#1545#0" expanded="true" />
-                <element signature="e#1752#1753#0" expanded="true" />
-                <element signature="e#1824#1825#0" expanded="true" />
-                <element signature="e#1879#1880#0" expanded="true" />
-                <element signature="e#1948#1949#0" expanded="true" />
-                <element signature="e#4431#4432#0" expanded="true" />
-                <element signature="e#4503#4504#0" expanded="true" />
+                <element signature="e#1549#1550#0" expanded="true" />
+                <element signature="e#1617#1618#0" expanded="true" />
+                <element signature="e#1826#1827#0" expanded="true" />
+                <element signature="e#1898#1899#0" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="e#2022#2023#0" expanded="true" />
+                <element signature="e#4588#4589#0" expanded="true" />
+                <element signature="e#4660#4661#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -629,7 +626,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionsManagerTest.canSwapAnItem">
+  <component name="RunManager" selected="JUnit.CollectionsManagerTest.canSortSellableItemsByPurchaseYear">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -820,9 +817,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSwapAnItem" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPurchaseYear" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPurchaseYear" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSwapAnItem" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionTest.canSortCollectionByPurchaseYear" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPotentialProfit" />
       </list>
@@ -851,8 +848,8 @@
     <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 16h 49m 23s.xml">
       <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionTest_canSortCollectionByPurchaseYear - 2018.06.06 at 16h 28m 16s.xml">
-      <configuration name="CollectionTest.canSortCollectionByPurchaseYear" configurationId="JUnit" />
+    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 17h 41m 27s.xml">
+      <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CollectionTest_canSortCollectionByPurchaseYear - 2018.06.06 at 16h 28m 25s.xml">
       <configuration name="CollectionTest.canSortCollectionByPurchaseYear" configurationId="JUnit" />
@@ -860,10 +857,10 @@
     <history-entry file="CollectionTest_canSortCollectionByPurchaseYear - 2018.06.06 at 16h 28m 36s.xml">
       <configuration name="CollectionTest.canSortCollectionByPurchaseYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionsManagerTest_canSortSellableItemsByPotentialProfit - 2018.06.06 at 15h 59m 48s.xml">
-      <configuration name="CollectionsManagerTest.canSortSellableItemsByPotentialProfit" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CollectionsManagerTest_canSortSellableItemsByPurchaseYear - 2018.06.06 at 16h 32m 21s.xml">
+      <configuration name="CollectionsManagerTest.canSortSellableItemsByPurchaseYear" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionsManagerTest_canSortSellableItemsByPurchaseYear - 2018.06.06 at 17h 41m 54s.xml">
       <configuration name="CollectionsManagerTest.canSortSellableItemsByPurchaseYear" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CollectionsManagerTest_canSwapAnItem - 2018.06.06 at 17h 22m 44s.xml">
@@ -890,7 +887,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28970587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28970587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1024,14 +1021,14 @@
           <caret line="106" column="18" lean-forward="false" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#4431#4432#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+            <element signature="e#4588#4589#0" expanded="true" />
+            <element signature="e#4660#4661#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1165,14 +1162,14 @@
           <caret line="20" column="74" lean-forward="false" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#4431#4432#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+            <element signature="e#4588#4589#0" expanded="true" />
+            <element signature="e#4660#4661#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1454,18 +1451,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="185" column="26" lean-forward="false" selection-start-line="185" selection-start-column="26" selection-end-line="185" selection-end-column="26" />
+        <state relative-caret-position="1755">
+          <caret line="185" column="34" lean-forward="false" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-            <element signature="e#4431#4432#0" expanded="true" />
-            <element signature="e#4503#4504#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+            <element signature="e#4588#4589#0" expanded="true" />
+            <element signature="e#4660#4661#0" expanded="true" />
           </folding>
         </state>
       </provider>
