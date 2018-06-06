@@ -103,6 +103,18 @@ public class DrinkTest {
         assertEquals(13.64, drink.calculatePercentageProfitIfSold(), 0.01);
      }
 
+     @Test
+     public void cannotCalculateProfitIfItemNotSellable() {
+        drink.setNewMarketValue(25.00);
+        assertEquals(0.00, drink.calculateProfitIfSold(), 0.01);
+     }
+
+     @Test
+     public void cannotCalculatePercentageProfitIfItemNotSellable() {
+        drink.setNewMarketValue(25.00);
+        assertEquals(0.00, drink.calculatePercentageProfitIfSold(), 0.01);
+     }
+
     @Test
     public void canGetFavouriteStatusFalse() {
         assertEquals(false, drink.getFavouriteStatus());
