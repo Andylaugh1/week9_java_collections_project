@@ -41,22 +41,6 @@ public abstract class Item implements ISell {
         this.currentMarketValue = newMarketValue;
     }
 
-    public double calculateProfitIfSold() {
-        double potentialProfit = 0;
-        if (isForResale == true) {
-            potentialProfit = currentMarketValue - (buyPrice + shippingPrice);
-        }
-        return potentialProfit;
-    }
-
-    public double calculatePercentageProfitIfSold() {
-        double potentialPercentProfit = 0;
-        if (isForResale == true) {
-            potentialPercentProfit = (calculateProfitIfSold() / (buyPrice + shippingPrice)) * 100;
-        }
-        return potentialPercentProfit;
-     }
-
     public boolean getFavouriteStatus(){
         return this.isFavourite;
     }
@@ -73,12 +57,27 @@ public abstract class Item implements ISell {
         if ((getFavouriteStatus() == false) && getResaleStatus() == false) {
             this.isForResale = true;
         }
-
     }
 
     public void changeForSaleStatusBackToFalse() {
         if (getResaleStatus() == true);
         this.isForResale = false;
+    }
+
+    public double calculateProfitIfSold() {
+        double potentialProfit = 0;
+        if (isForResale == true) {
+            potentialProfit = currentMarketValue - (buyPrice + shippingPrice);
+        }
+        return potentialProfit;
+    }
+
+    public double calculatePercentageProfitIfSold() {
+        double potentialPercentProfit = 0;
+        if (isForResale == true) {
+            potentialPercentProfit = (calculateProfitIfSold() / (buyPrice + shippingPrice)) * 100;
+        }
+        return potentialPercentProfit;
     }
 
 }
