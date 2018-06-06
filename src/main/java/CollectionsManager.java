@@ -63,6 +63,10 @@ public class CollectionsManager {
 
     public void addItemForDonation(IDonate item) {
         forDonationItems.add(item);
-            }
+    }
+
+    public void donateItem(IDonate itemToDonate) {
+        forDonationItems.remove(itemToDonate);
+    }
 
 }

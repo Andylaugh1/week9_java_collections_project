@@ -124,6 +124,10 @@ public class CollectionsManagerTest {
 
     @Test
     public void canDonateItem() {
+        actionFigure3.markForDonation();
+        collectionsManager.addItemForDonation(actionFigure3);
+        collectionsManager.donateItem(actionFigure3);
+        assertEquals(0, collectionsManager.countDonationItems());
     }
 
 }
