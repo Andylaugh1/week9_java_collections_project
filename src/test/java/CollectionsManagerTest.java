@@ -102,6 +102,7 @@ public class CollectionsManagerTest {
         collectionsManager.sellItem(item1, collection);
         assertEquals(0, collectionsManager.countSaleItems());
         assertEquals(3.50, collectionsManager.getProfit(), 0.01);
+        assertEquals(0, collection.countItems());
     }
 
     @Test
