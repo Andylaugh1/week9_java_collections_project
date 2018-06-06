@@ -1,6 +1,7 @@
 import Interface.IDonate;
 import Interface.ISwap;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -81,12 +82,14 @@ public class CollectionsManager {
         return forDonationItems.contains(item);
     }
 
-    public void donateItem(IDonate itemToDonate, Collection collection) {
+    public void donateItem(IDonate itemToDonate, Collection collection, String destination) {
         if (findItemForDonation(itemToDonate) == true) {
             forDonationItems.remove(itemToDonate);
             collection.removeItem((Item)itemToDonate);
             itemsDonated += 1;
+            System.out.println("Item has been donated to " + destination);
         }
+        else System.out.println("Item has not been donated as it is not in your donation list");
     }
 
     public void sortByProfit(){
@@ -100,5 +103,11 @@ public class CollectionsManager {
     public void swapItem(Collection collection, Item oldItem, Item newItem) {
         collection.removeItem(oldItem);
         collection.addItem(newItem);
+    }
+
+    public void addManyItemsToDonationList(ArrayList<IDonate> items) {
+        for (IDonate item : items) {
+            forDonationItems.add(item);
+        }
     }
 }

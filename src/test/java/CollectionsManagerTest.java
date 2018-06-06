@@ -143,7 +143,7 @@ public class CollectionsManagerTest {
     public void canDonateItem() {
         actionFigure3.markForDonation();
         collectionsManager.addItemForDonation(actionFigure3);
-        collectionsManager.donateItem(actionFigure3, actionFigureCollection);
+        collectionsManager.donateItem(actionFigure3, actionFigureCollection, "The Children's Hospital");
         assertEquals(0, collectionsManager.countDonationItems());
         assertEquals(1, collectionsManager.getItemsDonated());
         assertEquals(2, actionFigureCollection.countItems());
@@ -152,10 +152,23 @@ public class CollectionsManagerTest {
     @Test
     public void cannotDonateItemNotInList() {
         actionFigure3.markForDonation();
-        collectionsManager.donateItem(actionFigure3, actionFigureCollection);
+        collectionsManager.donateItem(actionFigure3, actionFigureCollection, "The Children's Hospital");
         assertEquals(0, collectionsManager.getItemsDonated());
         assertEquals(0, collectionsManager.countDonationItems());
         assertEquals(3, actionFigureCollection.countItems());
+    }
+
+    @Test
+    public void canAddManyItemsToDonationList() {
+        actionFigure3.markForDonation();
+        actionFigure2.markForDonation();
+        actionFigure1.markForDonation();
+        ArrayList itemsForDonation = new ArrayList();
+        itemsForDonation.add(actionFigure1);
+        itemsForDonation.add(actionFigure2);
+        itemsForDonation.add(actionFigure3);
+        collectionsManager.addManyItemsToDonationList(itemsForDonation);
+        assertEquals(3, collectionsManager.countDonationItems());
     }
 
     @Test
@@ -170,7 +183,7 @@ public class CollectionsManagerTest {
         collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         collectionsManager.sortByProfit();
         System.out.println(collectionsManager.getForSaleItems());
-        assertEquals(drink2, collectionsManager.getForSaleItems().get(0));
+        assertEquals(Arrays.asList(drink2, drink1, actionFigure2), collectionsManager.getForSaleItems());
     }
 
     @Test
@@ -184,7 +197,7 @@ public class CollectionsManagerTest {
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
         collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
         collectionsManager.sortByPurchaseYear();
-        assertEquals(actionFigure2, collectionsManager.getForSaleItems().get(0));
+        assertEquals(Arrays.asList(actionFigure2, drink2, drink1), collectionsManager.getForSaleItems());
     }
 
     @Test

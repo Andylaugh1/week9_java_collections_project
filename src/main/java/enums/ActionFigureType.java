@@ -2,7 +2,7 @@ package enums;
 
 public enum ActionFigureType {
 
-    TURTLE,
+    NINJA_TURTLE,
     WRESTLER,
     GHOSTBUSTER,
     SUPERHERO,

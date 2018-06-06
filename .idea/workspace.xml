@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="943ce5b2-d3f1-484a-87ef-fec223f42816" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/enums/TShirtType.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/CollectionsManagerTest.class" afterPath="$PROJECT_DIR$/out/test/classes/CollectionsManagerTest.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TShirt.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/TShirtType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ActionFigure.java" afterPath="$PROJECT_DIR$/src/main/java/ActionFigure.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" afterPath="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Interface/ISwap.java" afterPath="$PROJECT_DIR$/src/main/java/Interface/ISwap.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java" afterPath="$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TShirtTest.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -33,12 +31,22 @@
       <file leaf-file-name="ActionFigure.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ActionFigure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="349">
+              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
-                <element signature="e#990#991#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1031#1032#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionFigureType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,30 +64,30 @@
       <file leaf-file-name="CollectionsManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CollectionsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1150">
-              <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="256">
+              <caret line="107" column="42" lean-forward="false" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
                 <element signature="e#920#921#0" expanded="true" />
-                <element signature="e#948#949#0" expanded="true" />
-                <element signature="e#2068#2069#0" expanded="true" />
-                <element signature="e#2110#2111#0" expanded="true" />
-                <element signature="e#2166#2167#0" expanded="true" />
-                <element signature="e#2220#2221#0" expanded="true" />
-                <element signature="e#2538#2539#0" expanded="true" />
-                <element signature="e#2604#2605#0" expanded="true" />
-                <element signature="e#2644#2645#0" expanded="true" />
-                <element signature="e#2717#2718#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#2100#2101#0" expanded="true" />
+                <element signature="e#2142#2143#0" expanded="true" />
+                <element signature="e#2198#2199#0" expanded="true" />
+                <element signature="e#2252#2253#0" expanded="true" />
+                <element signature="e#2762#2763#0" expanded="true" />
+                <element signature="e#2828#2829#0" expanded="true" />
+                <element signature="e#2868#2869#0" expanded="true" />
+                <element signature="e#2941#2942#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +96,8 @@
       <file leaf-file-name="CollectionsManagerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="198" column="1" lean-forward="true" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
+            <state relative-caret-position="256">
+              <caret line="170" column="22" lean-forward="false" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1574#1575#0" expanded="true" />
@@ -118,8 +126,8 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+            <state relative-caret-position="631">
+              <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1020#1021#0" expanded="true" />
@@ -157,12 +165,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ISell.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Interface/ISell.java">
+      <file leaf-file-name="Drink.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Drink.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="45">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -483,7 +498,6 @@
         <option value="$PROJECT_DIR$/src/main/java/enums/WRESTLER_TYPE.java" />
         <option value="$PROJECT_DIR$/src/main/java/WrestlingFigure.java" />
         <option value="$PROJECT_DIR$/src/test/java/WrestlingFigureTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java" />
         <option value="$PROJECT_DIR$/src/main/java/enums/CollectionType.java" />
         <option value="$PROJECT_DIR$/src/main/java/Drink.java" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
@@ -503,6 +517,7 @@
         <option value="$PROJECT_DIR$/src/test/java/CollectionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interface/Interface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java" />
         <option value="$PROJECT_DIR$/src/main/java/ActionFigure.java" />
         <option value="$PROJECT_DIR$/src/main/java/Interface/ISwap.java" />
         <option value="$PROJECT_DIR$/src/main/java/CollectionsManager.java" />
@@ -619,7 +634,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CollectionsManagerTest.canSwapAnItem">
+  <component name="RunManager" selected="JUnit.CollectionsManagerTest.canAddManyItemsToDonationList">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -661,14 +676,34 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CollectionTest.canSortCollectionByPurchaseYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionsManagerTest.canAddManyItemsToDonationList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Week_9_collections_project_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectionTest" />
-      <option name="METHOD_NAME" value="canSortCollectionByPurchaseYear" />
+      <option name="MAIN_CLASS_NAME" value="CollectionsManagerTest" />
+      <option name="METHOD_NAME" value="canAddManyItemsToDonationList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CollectionsManagerTest.canDonateItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Week_9_collections_project_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CollectionsManagerTest" />
+      <option name="METHOD_NAME" value="canDonateItem" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -701,34 +736,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CollectionsManagerTest.canSortSellableItemsByPurchaseYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionsManagerTest.cannotDonateItemNotInList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Week_9_collections_project_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CollectionsManagerTest" />
-      <option name="METHOD_NAME" value="canSortSellableItemsByPurchaseYear" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="CollectionsManagerTest.canSwapAnItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Week_9_collections_project_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CollectionsManagerTest" />
-      <option name="METHOD_NAME" value="canSwapAnItem" />
+      <option name="METHOD_NAME" value="cannotDonateItemNotInList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -804,16 +819,16 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPotentialProfit" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionTest.canSortCollectionByPurchaseYear" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPurchaseYear" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSwapAnItem" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.cannotDonateItemNotInList" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canDonateItem" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canAddManyItemsToDonationList" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSwapAnItem" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPurchaseYear" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CollectionTest.canSortCollectionByPurchaseYear" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canAddManyItemsToDonationList" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.cannotDonateItemNotInList" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canDonateItem" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in Week_9_collections_project_test" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CollectionsManagerTest.canSortSellableItemsByPotentialProfit" />
       </list>
     </recent_temporary>
@@ -835,35 +850,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 16h 35m 08s.xml">
+    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 18h 09m 23s.xml">
       <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 16h 49m 23s.xml">
-      <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
+    <history-entry file="CollectionsManagerTest_canAddManyItemsToDonationList - 2018.06.06 at 19h 24m 35s.xml">
+      <configuration name="CollectionsManagerTest.canAddManyItemsToDonationList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 17h 41m 27s.xml">
-      <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
+    <history-entry file="CollectionsManagerTest_canDonateItem - 2018.06.06 at 19h 16m 10s.xml">
+      <configuration name="CollectionsManagerTest.canDonateItem" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Week_9_collections_project_test - 2018.06.06 at 18h 00m 29s.xml">
-      <configuration name="All in Week_9_collections_project_test" configurationId="JUnit" />
+    <history-entry file="CollectionsManagerTest_canSortSellableItemsByPotentialProfit - 2018.06.06 at 18h 09m 12s.xml">
+      <configuration name="CollectionsManagerTest.canSortSellableItemsByPotentialProfit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionsManagerTest_canSortSellableItemsByPurchaseYear - 2018.06.06 at 17h 41m 54s.xml">
+    <history-entry file="CollectionsManagerTest_canSortSellableItemsByPurchaseYear - 2018.06.06 at 18h 07m 39s.xml">
       <configuration name="CollectionsManagerTest.canSortSellableItemsByPurchaseYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionsManagerTest_canSwapAnItem - 2018.06.06 at 17h 22m 44s.xml">
-      <configuration name="CollectionsManagerTest.canSwapAnItem" configurationId="JUnit" />
+    <history-entry file="CollectionsManagerTest_canSortSellableItemsByPurchaseYear - 2018.06.06 at 18h 07m 50s.xml">
+      <configuration name="CollectionsManagerTest.canSortSellableItemsByPurchaseYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionsManagerTest_canSwapAnItem - 2018.06.06 at 17h 24m 09s.xml">
-      <configuration name="CollectionsManagerTest.canSwapAnItem" configurationId="JUnit" />
+    <history-entry file="CollectionsManagerTest_canSortSellableItemsByPurchaseYear - 2018.06.06 at 18h 08m 15s.xml">
+      <configuration name="CollectionsManagerTest.canSortSellableItemsByPurchaseYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionsManagerTest_canSwapAnItem - 2018.06.06 at 17h 24m 21s.xml">
-      <configuration name="CollectionsManagerTest.canSwapAnItem" configurationId="JUnit" />
+    <history-entry file="CollectionsManagerTest_canSortSellableItemsByPurchaseYear - 2018.06.06 at 18h 08m 30s.xml">
+      <configuration name="CollectionsManagerTest.canSortSellableItemsByPurchaseYear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionsManagerTest_canSwapAnItem - 2018.06.06 at 18h 04m 37s.xml">
-      <configuration name="CollectionsManagerTest.canSwapAnItem" configurationId="JUnit" />
+    <history-entry file="CollectionsManagerTest_cannotDonateItemNotInList - 2018.06.06 at 19h 16m 19s.xml">
+      <configuration name="CollectionsManagerTest.cannotDonateItemNotInList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CollectionsManagerTest_canSwapAnItem - 2018.06.06 at 18h 04m 52s.xml">
-      <configuration name="CollectionsManagerTest.canSwapAnItem" configurationId="JUnit" />
+    <history-entry file="CollectionsManagerTest_cannotDonateItemNotInList - 2018.06.06 at 19h 17m 12s.xml">
+      <configuration name="CollectionsManagerTest.cannotDonateItemNotInList" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -908,7 +923,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -918,8 +933,8 @@
         <state relative-caret-position="450">
           <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
           <folding>
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -976,26 +991,26 @@
           <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
             <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#2068#2069#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2538#2539#0" expanded="true" />
-            <element signature="e#2604#2605#0" expanded="true" />
-            <element signature="e#2644#2645#0" expanded="true" />
-            <element signature="e#2717#2718#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2142#2143#0" expanded="true" />
+            <element signature="e#2198#2199#0" expanded="true" />
+            <element signature="e#2252#2253#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
+            <element signature="e#2828#2829#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2941#2942#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1058,8 +1073,8 @@
         <state relative-caret-position="30">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1117,26 +1132,26 @@
           <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
             <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#2068#2069#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2538#2539#0" expanded="true" />
-            <element signature="e#2604#2605#0" expanded="true" />
-            <element signature="e#2644#2645#0" expanded="true" />
-            <element signature="e#2717#2718#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2142#2143#0" expanded="true" />
+            <element signature="e#2198#2199#0" expanded="true" />
+            <element signature="e#2252#2253#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
+            <element signature="e#2828#2829#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2941#2942#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1200,14 +1215,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SellableItem.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/enums/CollectionType.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1244,21 +1251,6 @@
         <state relative-caret-position="405">
           <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Drink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1313,22 +1305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Interface/ISell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1357,14 +1333,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ActionFigure.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/DrinkType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/TShirtType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Drink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/ActionFigureType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,56 +1404,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CollectionsManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ActionFigure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1150">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="349">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#2068#2069#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2538#2539#0" expanded="true" />
-            <element signature="e#2604#2605#0" expanded="true" />
-            <element signature="e#2644#2645#0" expanded="true" />
-            <element signature="e#2717#2718#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/DrinkType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CollectionsManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/TShirtType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="256">
+          <caret line="107" column="42" lean-forward="false" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2142#2143#0" expanded="true" />
+            <element signature="e#2198#2199#0" expanded="true" />
+            <element signature="e#2252#2253#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
+            <element signature="e#2828#2829#0" expanded="true" />
+            <element signature="e#2868#2869#0" expanded="true" />
+            <element signature="e#2941#2942#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CollectionsManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="198" column="1" lean-forward="true" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
+        <state relative-caret-position="256">
+          <caret line="170" column="22" lean-forward="false" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1574#1575#0" expanded="true" />

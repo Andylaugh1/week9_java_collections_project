@@ -2,7 +2,7 @@ import Interface.IDonate;
 import Interface.ISwap;
 import enums.ActionFigureType;
 
-public class ActionFigure extends Item implements IDonate {
+public class ActionFigure extends Item implements IDonate, ISwap {
 
     private String name;
     private ActionFigureType actionFigureType;
