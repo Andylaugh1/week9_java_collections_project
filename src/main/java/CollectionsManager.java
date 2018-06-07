@@ -87,9 +87,9 @@ public class CollectionsManager {
             forDonationItems.remove(itemToDonate);
             collection.removeItem((Item)itemToDonate);
             itemsDonated += 1;
-            System.out.println("Item has been donated to " + destination);
+            System.out.println(itemToDonate + " has been donated to " + destination);
         }
-        else System.out.println("Item has not been donated as it is not in your donation list");
+        else System.out.println(itemToDonate + " has not been donated as it is not in your donation list");
     }
 
     public void sortByProfit(){
@@ -108,6 +108,17 @@ public class CollectionsManager {
     public void addManyItemsToDonationList(ArrayList<IDonate> items) {
         for (IDonate item : items) {
             forDonationItems.add(item);
+        }
+    }
+
+    public void donateManyItemsAtOnce(ArrayList<IDonate> items, String destination) {
+        for (IDonate item : items) {
+            if (findItemForDonation(item) == true) {
+                forDonationItems.remove(item);
+                itemsDonated +=1;
+                System.out.println(item + " has been donated to " + destination);
+            }
+            else System.out.println("Sorry, not all items were donated as " + item + " is not in your donation list");
         }
     }
 }

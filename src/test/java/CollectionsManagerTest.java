@@ -172,6 +172,37 @@ public class CollectionsManagerTest {
     }
 
     @Test
+    public void canDonateManyItemsAtOnce() {
+        actionFigure3.markForDonation();
+        actionFigure2.markForDonation();
+        actionFigure1.markForDonation();
+        ArrayList itemsForDonation = new ArrayList();
+        itemsForDonation.add(actionFigure1);
+        itemsForDonation.add(actionFigure2);
+        itemsForDonation.add(actionFigure3);
+        collectionsManager.addManyItemsToDonationList(itemsForDonation);
+        collectionsManager.donateManyItemsAtOnce(itemsForDonation, "The Children's Hospital");
+        assertEquals(3, collectionsManager.getItemsDonated());
+    }
+
+    @Test
+    public void cannotDonateManyItemsIfNotInList() {
+        actionFigure3.markForDonation();
+        actionFigure2.markForDonation();
+        actionFigure1.markForDonation();
+        ArrayList itemsForDonation = new ArrayList();
+        itemsForDonation.add(actionFigure1);
+        itemsForDonation.add(actionFigure2);
+        itemsForDonation.add(actionFigure3);
+        collectionsManager.addItemForDonation(actionFigure1);
+        collectionsManager.addItemForDonation(actionFigure2);
+        collectionsManager.donateManyItemsAtOnce(itemsForDonation, "The Children's Hospital");
+        assertEquals(2, collectionsManager.getItemsDonated());
+
+    }
+
+
+    @Test
     public void canSortSellableItemsByPotentialProfit() {
         drink1.setNewMarketValue(25.00);
         drink1.changeForSaleStatusToTrue();
