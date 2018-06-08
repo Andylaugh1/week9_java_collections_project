@@ -80,4 +80,7 @@ public abstract class Item implements ISell {
         return potentialPercentProfit;
     }
 
+    public int lengthOfOwnership(int currentYear) {
+        return currentYear - purchaseYear;
+    }
 }

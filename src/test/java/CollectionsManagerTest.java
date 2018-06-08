@@ -85,14 +85,14 @@ public class CollectionsManagerTest {
     }
 
     @Test
-    public void canCalculateTotalPercentageProfitIfSold() {
+    public void canCalculateAveragePercentageProfitIfSold() {
         drink1.setNewMarketValue(25.00);
         drink1.changeForSaleStatusToTrue();
         actionFigure2.setNewMarketValue(16.00);
         actionFigure2.changeForSaleStatusToTrue();
         collectionsManager.addSellableItemsFromCollection(drinkCollection);
         collectionsManager.addSellableItemsFromCollection(actionFigureCollection);
-        assertEquals(18.36, collectionsManager.calculateTotalPercentageProfitIfItemsSold(), 0.01);
+        assertEquals(18.36, collectionsManager.calculateAveragePercentageProfitIfItemsSold(), 0.01);
     }
 
     @Test

@@ -132,4 +132,10 @@ public class DrinkTest {
         drink.changeFavouriteStatus();
         assertEquals(false, drink.getFavouriteStatus());
     }
+
+    @Test
+    public void canFindOutHowLongItemHasBeenOwned() {
+       int result = drink.lengthOfOwnership(2018);
+        assertEquals(6, result);
+    }
 }

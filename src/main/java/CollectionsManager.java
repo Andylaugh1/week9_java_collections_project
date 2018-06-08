@@ -59,12 +59,12 @@ public class CollectionsManager {
         return totalPotentialProfit;
     }
 
-    public double calculateTotalPercentageProfitIfItemsSold() {
-        double totalPotentialPercentageProfit = 0;
+    public double calculateAveragePercentageProfitIfItemsSold() {
+        double averagePotentialPercentageProfit = 0;
         for (Item item : forSaleItems) {
-            totalPotentialPercentageProfit += (item.calculatePercentageProfitIfSold() / countSaleItems());
+            averagePotentialPercentageProfit += (item.calculatePercentageProfitIfSold() / countSaleItems());
         }
-        return totalPotentialPercentageProfit;
+        return averagePotentialPercentageProfit;
     }
 
     public void sellItem(Item itemToSell, Collection collection) {
